@@ -1,0 +1,33 @@
+// @import "mixins";
+@use "mixins";
+
+.container-fluid {
+    #header {
+        @include mixins.desktop {
+            height: 100px;
+            flex-direction: row;
+        }
+    }
+
+    #main {
+        .product {
+            .img-wrapper {
+                width: 100px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #footer {
+        height: 100px;
+    }
+
+    .row {
+        div {
+            background-color: red;
+            border: 2px solid blue;
+        }
+    }
+}
