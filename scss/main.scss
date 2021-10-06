@@ -2,32 +2,100 @@
 @use "mixins";
 
 .container-fluid {
-    #header {
-        @include mixins.desktop {
-            height: 100px;
-            flex-direction: row;
-        }
+  #header {
+    @include mixins.desktop {
+      height: 100px;
+      flex-direction: row;
     }
+  }
 
-    #main {
-        .product {
-            .img-wrapper {
-                width: 100px;
-                img {
-                    width: 100%;
-                }
-            }
+  #main {
+    .product {
+      .img-wrapper {
+        width: 100px;
+        img {
+          width: 100%;
         }
+      }
     }
+  }
 
-    #footer {
-        height: 100px;
-    }
+  #footer {
+    height: 100px;
+  }
 
-    .row {
-        div {
-            background-color: red;
-            border: 2px solid blue;
-        }
+  .row {
+    div {
+      background-color: red;
+      border: 2px solid blue;
     }
+  }
+}
+
+// CHECKOUT //
+#checkout-header {
+  height: 100px;
+  #cart-logo {
+    margin-left: 45px;
+    @include mixins.tablet {
+      margin-left: 0px;
+    }
+  }
+  i {
+    font-size: 50px;
+  }
+  .logo-container {
+    display: none;
+    height: 25px;
+    @include mixins.tablet {
+      display: unset;
+    }
+    img {
+      height: 100%;
+    }
+  }
+  button {
+    @include mixins.tablet {
+      display: none;
+    }
+  }
+}
+#adleft,
+#adright {
+  display: none;
+  @include mixins.desktop {
+    display: unset;
+  }
+}
+#price-sm {
+  height: 40px;
+  #total {
+    float: left;
+  }
+  #amount {
+    float: right;
+  }
+  @include mixins.tablet {
+    display: none !important;
+  }
+}
+#price-md-lg {
+  display: none;
+  ul {
+    background-color: transparent;
+    width: 100%;
+    li {
+      list-style-type: none;
+      list-style-position: unset;
+    }
+    hr {
+      margin: 5px;
+    }
+  }
+  @include mixins.tablet {
+    display: unset;
+  }
+  button {
+    margin-bottom: 5px;
+  }
 }
