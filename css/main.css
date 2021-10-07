@@ -129,21 +129,22 @@ body {
 
 #checkout-header {
   height: 100px;
+  background-color: #b2c4ff;
 }
 #checkout-header #cart-logo {
-  margin-left: 40px;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   #checkout-header #cart-logo {
-    margin-left: 0px;
+    display: unset;
   }
 }
 #checkout-header i {
-  font-size: 50px;
+  font-size: 25pt;
 }
 #checkout-header .logo-container {
   display: none;
-  height: 25px;
+  height: 40px;
 }
 @media screen and (min-width: 768px) {
   #checkout-header .logo-container {
@@ -153,10 +154,24 @@ body {
 #checkout-header .logo-container img {
   height: 100%;
 }
+#checkout-header button {
+  background-color: #004c8c;
+}
+#checkout-header button:hover {
+  background-color: #003d6e;
+}
 @media screen and (min-width: 768px) {
   #checkout-header button {
     display: none;
   }
+}
+#checkout-header a:link,
+#checkout-header a:visited {
+  color: black;
+}
+
+#checkout-main .img-wrapper {
+  padding: 5px;
 }
 
 #adleft,
@@ -166,6 +181,7 @@ body {
 @media screen and (min-width: 992px) {
   #adleft,
 #adright {
+    background-color: #d7ebff;
     display: unset;
   }
 }
@@ -187,6 +203,7 @@ body {
 
 #price-md-lg {
   display: none;
+  height: 600px;
 }
 #price-md-lg ul {
   background-color: transparent;
@@ -206,6 +223,33 @@ body {
 }
 #price-md-lg button {
   margin-bottom: 0px;
+  background-color: #004c8c;
+}
+#price-md-lg button:hover {
+  background-color: #003d6e;
+}
+
+#price-box,
+#price-num {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  #price-box,
+#price-num {
+    display: unset;
+  }
+}
+
+#btn-reset {
+  margin-top: 10px;
+}
+
+#btn-submit {
+  margin-top: 5px;
+  background-color: #004c8c;
+}
+#btn-submit:hover {
+  background-color: #003d6e;
 }
 
 /*# sourceMappingURL=main.css.map */

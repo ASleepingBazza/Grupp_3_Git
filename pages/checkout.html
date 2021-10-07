@@ -17,111 +17,194 @@
 <body>
     <div class="container-fluid">
         <div id="checkout-header" class="row">
-            <div class="col-12 bg-light d-flex justify-content-between align-items-center">
-                <i id="arrow-back" class="fas fa-arrow-circle-left"></i>
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <a href="../index.html"><i id="arrow-back" class="fas fa-arrow-circle-left"></i></a>
                 <div class="logo-container">
-                    <img src="" alt="">
+                    <img src="../assets/logo.png" alt="Logo">
                 </div>
                 <i id="cart-logo" class="fas fa-shopping-cart"></i>
-                <button type="button" class="btn btn-primary">Gå vidare</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gå vidare</button>
             </div>
         </div>
         <div class="row">
             <div id="price-sm" class="col-12 d-flex align-items-center">
-                <span id="total">Total:</span>
-                <div class="d-flex justify-content-end w-100"><span id="amount">$2899</span></div>
+                <span id="total">Totalt:</span>
+                <div class="d-flex justify-content-end w-100"><span id="amount"><b>30 860kr</b></span></div>
             </div>
         </div>
         <div class="row h-100">
-            <div id="adleft" class="col-sm-hidden col-lg-2 bg-primary">ad</div>
+            <div id="adleft" class="col-lg-2"></div>
             <div id="checkout-main" class="col-sm-12 col-md-10 col-lg-6 justify-content-center">
                 <div id="main" class="row justify-content-center">
-                    <div class="col-12 col-lg-8 d-flex flex-wrap">
-                        <div
-                            class="
-                                product
-                                col-12
-                                d-flex
-                                flex-column
-                                justify-content-center
-                                align-items-center
-                            "
-                        >
+                    <div class="card col-12">
+                        <div class="row">
+                        <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
                             <div class="img-wrapper">
-                                <img src="" alt="" />
+                                <img
+                                    src="../assets/images/huawei-p40-lite-smartphone-6128gb-midnight-black.webp"
+                                    class="card-img-top"
+                                    alt="huawei-p40-lite-smartphone-6128gb-midnight-black"
+                            />
                             </div>
-                            <span class="product-name">TestProdukt1</span>
                         </div>
-                        <div
-                            class="
-                                product
-                                col-12
-                                d-flex
-                                flex-column
-                                justify-content-center
-                                align-items-center
-                            "
-                        >
+                        <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="card-body">
+                            <div class="card-title">
+                                Huawei P40 Lite - Smartphone 6128gb Midnight
+                                Black
+                                <br>
+                                <b class="d-lg-none">2190kr</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="price-box" class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <span id="price-num"><b>2190kr</b></span></div>
+                    </div>
+                    </div>
+                    <div class="card col-12">
+                        <div class="row">
+                        <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
                             <div class="img-wrapper">
-                                <img src="" alt="" />
+                                <img
+                                    src="../assets/images/iphone-13-pro-5g-smartphone-128gb-graphite.webp"
+                                    class="card-img-top"
+                                    alt="iphone-13-pro-5g-smartphone-128gb-graphite"
+                            />
                             </div>
-                            <span class="product-name">TestProdukt1</span>
                         </div>
-                        <div
-                            class="
-                                product
-                                col-12
-                                d-flex
-                                flex-column
-                                justify-content-center
-                                align-items-center
-                            "
-                        >
+                        <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="card-body">
+                            <div class="card-title">
+                                iPhone 13 Pro - 5g Smartphone 128gb Graphite
+                                <br>
+                                <b class="d-lg-none">13 490kr</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="price-box" class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <span id="price-num"><b>13 490kr</b></span></div>
+                    </div>
+                    </div>
+                    <div class="card col-12">
+                        <div class="row">
+                        <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
                             <div class="img-wrapper">
-                                <img src="" alt="" />
+                                <img
+                                    src="../assets/images/samsung-galaxy-s20-fe-4g-smartphone-6128gb-cloud-navy.webp"
+                                    class="card-img-top"
+                                    alt="samsung-galaxy-s20-fe-4g-smartphone-6128gb-cloud-navy"
+                            />
                             </div>
-                            <span class="product-name">TestProdukt1</span>
                         </div>
-                        <div
-                            class="
-                                product
-                                col-12
-                                d-flex
-                                flex-column
-                                justify-content-center
-                                align-items-center
-                            "
-                        >
+                        <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="card-body">
+                            <div class="card-title">
+                                Samsung Galaxy S20 - 4g Smartphone 6128gb Cloud
+                                Navy
+                                <br>
+                                <b class="d-lg-none">5590kr</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="price-box" class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <span id="price-num"><b>5590kr</b></span></div>
+                    </div>
+                    </div>
+                    <div class="card col-12">
+                        <div class="row">
+                        <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
                             <div class="img-wrapper">
-                                <img src="" alt="" />
+                                <img
+                                    src="../assets/images/samsung-galaxy-z-flip-3-smartphone-8256gb-trendy-green.webp"
+                                    class="card-img-top"
+                                    alt="samsung-galaxy-z-flip-3-smartphone-8256gb-trendy-green"
+                            />
                             </div>
-                            <span class="product-name">TestProdukt1</span>
                         </div>
+                        <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="card-body">
+                            <div class="card-title">
+                                Samsung Galaxy Z Flip 3 - Smartphone 8256gb
+                                Trendy Green
+                                <br>
+                                <b class="d-lg-none">9590kr</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="price-box" class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <span id="price-num"><b>9590kr</b></span></div>
+                    </div>
                     </div>
                 </div>
             </div>
             <div id="price-md-lg" class="col-md-2 col-lg-2">
-                <div class="d-flex flex-column justify-content-between h-100">
+                <div class="d-flex flex-column h-100">
                 <div class="d-flex justify-content-start">
                     <ul class="ps-0">
-                        <li>iPhone 12 <br><b>$800</b></li>
-                        <li>Samsung S21 <br><b>$600</b></li>
-                        <li>Nokia 3310 <br><b>$999</b></li>
-                        <li>Sony A21 <br><b>$500</b></li>
+                        <li>Huawei P40 Lite <br><b>2190kr</b></li>
                         <hr/>
-                        <li>Shipping <br><strike><b>$25</b></strike><i> free</i></li>
+                        <li>iPhone 13 Pro <br><b>13 490kr</b></li>
+                        <hr/>
+                        <li>Samsung Galaxy S20 <br><b>5590kr</b></li>
+                        <hr/>
+                        <li>Samsung Galaxy Z Flip 3 <br><b>9590kr</b></li>
+                        <hr/>
+                        <li>Frakt <br><strike><b>199kr</b></strike><i> gratis</i></li>
                     </ul>
                 </div>
                 <div class="d-flex flex-row align-items-center flex-wrap">
-                    Total: <b>$2899</b>
-                    <button type="button" class="btn btn-primary w-100">Gå vidare</button>
+                    Totalt: <b>30 860kr</b>
+                    <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gå vidare</button>
                 </div>
             </div>
                 
             </div>
-            <div id="adright" class="col-lg-2 bg-primary">ad</div>
+            <div id="adright" class="col-lg-2"></div>
         </div>
         </div>
     </div>
+    <!-- MODAL -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Leveransuppgifter</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-12">
+                          <form action="confirmation.html">
+                              <label for="firstname">Förnamn</label>
+                              <input type="text" name="firstname" id="firstname" class="form-control" required>
+                              <label for="lastname">Efternamn</label>
+                              <input type="text" name="lastname" id="lastname" class="form-control" required>
+                              <label for="email">E-mail</label>
+                              <input type="email" name="email" id="email" class="form-control" required>
+                              <label for="adress">Adress</label>
+                              <input type="text" name="adress" id="adress" class="form-control" required>
+                              <label for="postalcode">Postnummer</label>
+                              <input type="text" name="postalcode" id="postalcode" class="form-control" pattern="[0-9]{5}" required>
+                              <label for="city">Stad</label>
+                              <input type="text" name="city" id="city" class="form-control" required>
+                              <label for="country">Land</label>
+                              <select class="form-select" aria-label="country" id="country">
+                                <option selected>Sverige</option>
+                                <option value="1">Norge</option>
+                                <option value="2">Finland</option>
+                                <option value="3">Danmark</option>
+                              </select>
+                                <button id="btn-reset" type="reset" class="btn btn-secondary w-100">Rensa</button>
+                                <button id="btn-submit" type="submit" class="btn btn-primary w-100">Lägg Order</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 </body>
 </html>
