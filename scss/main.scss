@@ -1,35 +1,144 @@
 // @import "mixins";
 @use "mixins";
+@use "variables";
 
-.container-fluid {
-  #header {
-    @include mixins.desktop {
-      height: 100px;
-      flex-direction: row;
+html,
+body {
+  height: 100%;
+  font-size: 16pt;
+
+  @include mixins.tablet {
+    font-size: 15pt;
+  }
+
+  @include mixins.desktop {
+    font-size: 14pt;
+  }
+}
+
+#autoscroll-btn {
+  display: block;
+  @include mixins.desktop {
+    display: none;
+  }
+}
+
+#mobile-tablet-menu-container {
+  display: block;
+  @include mixins.desktop {
+    display: none;
+  }
+
+  button {
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fas {
+      text-align: center;
+      font-size: 25pt;
+      //padding: 5pt;
     }
   }
 
-  #main {
-    .product {
+  .offcanvas-header {
+    background-color: variables.$third-color;
+  }
+
+  .offcanvas-body {
+    background-color: variables.$secondary-color;
+  }
+}
+
+.container-fluid {
+  #header {
+    height: 100vh;
+    background-color: variables.$third-color;
+
+    @include mixins.desktop {
+      height: 150px;
+    }
+
+    .logo-wrapper {
       .img-wrapper {
-        width: 100px;
+        width: 100%;
+        padding: 10pt;
+        img {
+          width: 100%;
+        }
+
+        @include mixins.desktop {
+          width: 50%;
+        }
+      }
+    }
+
+    #desktop-menu-container {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      //border: 2px solid red;
+      display: none;
+
+      @include mixins.desktop {
+        display: block;
+      }
+    }
+  }
+}
+
+#main {
+  background-color: variables.$secondary-color;
+
+  .filter {
+    padding: 15pt;
+    display: none;
+    font-size: 0.8rem;
+
+    @include mixins.desktop {
+      display: block;
+    }
+
+    background-color: white;
+  }
+
+  .products-showcase {
+    background-color: variables.$secondary-color;
+
+    .card {
+      padding: 15pt;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: box-shadow 0.2s linear;
+
+      &:hover,
+      &:active {
+        z-index: 1;
+        box-shadow: 0px 0px 20px 0px variables.$primary-color;
+      }
+
+      .img-wrapper {
+        max-width: 300px;
         img {
           width: 100%;
         }
       }
+
+      .card-body {
+        text-align: center;
+        max-width: 300px;
+      }
     }
   }
+}
 
-  #footer {
-    height: 100px;
-  }
-
-  .row {
-    div {
-      background-color: red;
-      border: 2px solid blue;
-    }
-  }
+#footer {
+  height: 150px;
+  background-color: variables.$third-color;
 }
 
 // CHECKOUT //
