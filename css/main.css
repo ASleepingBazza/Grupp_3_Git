@@ -22,7 +22,7 @@
   height: 100px;
 }
 #checkout-header #cart-logo {
-  margin-left: 45px;
+  margin-left: 40px;
 }
 @media screen and (min-width: 768px) {
   #checkout-header #cart-logo {
@@ -96,7 +96,7 @@
   }
 }
 #price-md-lg button {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 /*# sourceMappingURL=main.css.map */

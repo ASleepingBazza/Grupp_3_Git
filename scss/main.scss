@@ -36,7 +36,7 @@
 #checkout-header {
   height: 100px;
   #cart-logo {
-    margin-left: 45px;
+    margin-left: 40px;
     @include mixins.tablet {
       margin-left: 0px;
     }
@@ -96,6 +96,6 @@
     display: unset;
   }
   button {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
   }
 }
