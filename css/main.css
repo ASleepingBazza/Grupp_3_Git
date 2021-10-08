@@ -18,4 +18,146 @@
   border: 2px solid blue;
 }
 
+.modal-content .modal-header {
+  background-color: rgba(27, 27, 27, 0.9);
+  color: white;
+  margin: 5px;
+}
+.modal-content .modal-header .btn-close {
+  display: flex;
+  align-self: flex-start;
+  background-color: white;
+  font-size: 60%;
+}
+.modal-content .modal-header h5 {
+  font-weight: normal;
+  font-size: 30px;
+}
+.modal-content .modal-body {
+  box-shadow: 0px 5px 10px black;
+}
+.modal-content .modal-body .container .carousel {
+  height: 100%;
+}
+.modal-content .modal-body .container .carousel .carousel-inner .carousel-item {
+  width: 100%;
+  height: 350px;
+}
+.modal-content .modal-body .container h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.modal-content .modal-body .container .color {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 10px;
+}
+.modal-content .modal-body .container .color input[type=radio][id=black] {
+  display: none;
+}
+.modal-content .modal-body .container .color input[type=radio][id=black] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: black;
+}
+.modal-content .modal-body .container .color input[type=radio][id=black]:checked + *::before {
+  background: radial-gradient(black 0%, black 40%, transparent 50%, transparent);
+  border-color: black;
+}
+.modal-content .modal-body .container .color input[type=radio][id=black]:checked + * {
+  color: black;
+}
+.modal-content .modal-body .container .color input[type=radio][id=white] {
+  display: none;
+}
+.modal-content .modal-body .container .color input[type=radio][id=white] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: black;
+}
+.modal-content .modal-body .container .color input[type=radio][id=white]:checked + *::before {
+  background: radial-gradient(white 0%, white 40%, transparent 50%, transparent);
+  border-color: black;
+}
+.modal-content .modal-body .container .color input[type=radio][id=white]:checked + * {
+  color: white;
+}
+.modal-content .modal-body .container .color input[type=radio][id=red] {
+  display: none;
+}
+.modal-content .modal-body .container .color input[type=radio][id=red] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: black;
+}
+.modal-content .modal-body .container .color input[type=radio][id=red]:checked + *::before {
+  background: radial-gradient(Red 0%, Red 40%, transparent 50%, transparent);
+  border-color: black;
+}
+.modal-content .modal-body .container .color input[type=radio][id=red]:checked + * {
+  color: red;
+}
+.modal-content .modal-body .container .color input[type=radio][id=blue] {
+  display: none;
+}
+.modal-content .modal-body .container .color input[type=radio][id=blue] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: black;
+}
+.modal-content .modal-body .container .color input[type=radio][id=blue]:checked + *::before {
+  background: radial-gradient(Blue 0%, Blue 40%, transparent 50%, transparent);
+  border-color: black;
+}
+.modal-content .modal-body .container .color input[type=radio][id=blue]:checked + * {
+  color: Blue;
+}
+.modal-content .modal-body .container .info h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.modal-content .modal-body .container .info span {
+  font-size: 20px;
+}
+.modal-content .modal-footer {
+  height: 100px;
+}
+.modal-content .modal-footer .btn {
+  margin: 30px;
+  width: 100px;
+}
+
 /*# sourceMappingURL=main.css.map */

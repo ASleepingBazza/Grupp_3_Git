@@ -2,32 +2,206 @@
 @use "mixins";
 
 .container-fluid {
-    #header {
-        @include mixins.desktop {
-            height: 100px;
-            flex-direction: row;
-        }
+  #header {
+    @include mixins.desktop {
+      height: 100px;
+      flex-direction: row;
     }
+  }
 
-    #main {
-        .product {
-            .img-wrapper {
-                width: 100px;
-                img {
-                    width: 100%;
-                }
-            }
+  #main {
+    .product {
+      .img-wrapper {
+        width: 100px;
+        img {
+          width: 100%;
         }
+      }
     }
+  }
 
-    #footer {
-        height: 100px;
+  #footer {
+    height: 100px;
+  }
+
+  .row {
+    div {
+      background-color: red;
+      border: 2px solid blue;
     }
-
-    .row {
-        div {
-            background-color: red;
-            border: 2px solid blue;
+  }
+}
+.modal-content {
+  .modal-header {
+    background-color: rgba(27, 27, 27, 0.9);
+    color: white;
+    margin: 5px;
+    .btn-close {
+      display: flex;
+      align-self: flex-start;
+      background-color: white;
+      font-size: 60%;
+    }
+    h5 {
+      font-weight: normal;
+      font-size: 30px;
+    }
+  }
+  .modal-body {
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    .container {
+      .carousel {
+        height: 100%;
+        .carousel-inner {
+          .carousel-item {
+            width: 100%;
+            height: 350px;
+          }
         }
+      }
+      h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .color {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: rgba(128, 128, 128, 0.3);
+        border-radius: 10px;
+
+        input[type="radio"][id="black"] {
+          display: none;
+        }
+        input[type="radio"][id="black"] + *::before {
+          content: "";
+          display: inline-block;
+          vertical-align: bottom;
+          width: 3rem;
+          height: 3rem;
+          margin-right: 0.3rem;
+          border-radius: 50%;
+          border-style: solid;
+          border-width: 0.1rem;
+          border-color: rgb(0, 0, 0);
+        }
+        input[type="radio"][id="black"]:checked + *::before {
+          background: radial-gradient(
+            black 0%,
+            black 40%,
+            transparent 50%,
+            transparent
+          );
+          border-color: black;
+        }
+        input[type="radio"][id="black"]:checked + * {
+          color: black;
+        }
+        input[type="radio"][id="white"] {
+          display: none;
+        }
+        input[type="radio"][id="white"] + *::before {
+          content: "";
+          display: inline-block;
+          vertical-align: bottom;
+          width: 3rem;
+          height: 3rem;
+          margin-right: 0.3rem;
+          border-radius: 50%;
+          border-style: solid;
+          border-width: 0.1rem;
+          border-color: rgb(0, 0, 0);
+        }
+        input[type="radio"][id="white"]:checked + *::before {
+          background: radial-gradient(
+            white 0%,
+            white 40%,
+            transparent 50%,
+            transparent
+          );
+          border-color: black;
+        }
+        input[type="radio"][id="white"]:checked + * {
+          color: white;
+        }
+        input[type="radio"][id="red"] {
+          display: none;
+        }
+        input[type="radio"][id="red"] + *::before {
+          content: "";
+          display: inline-block;
+          vertical-align: bottom;
+          width: 3rem;
+          height: 3rem;
+          margin-right: 0.3rem;
+          border-radius: 50%;
+          border-style: solid;
+          border-width: 0.1rem;
+          border-color: rgb(0, 0, 0);
+        }
+        input[type="radio"][id="red"]:checked + *::before {
+          background: radial-gradient(
+            Red 0%,
+            Red 40%,
+            transparent 50%,
+            transparent
+          );
+          border-color: black;
+        }
+        input[type="radio"][id="red"]:checked + * {
+          color: red;
+        }
+        input[type="radio"][id="blue"] {
+          display: none;
+        }
+        input[type="radio"][id="blue"] + *::before {
+          content: "";
+          display: inline-block;
+          vertical-align: bottom;
+          width: 3rem;
+          height: 3rem;
+          margin-right: 0.3rem;
+          border-radius: 50%;
+          border-style: solid;
+          border-width: 0.1rem;
+          border-color: rgb(0, 0, 0);
+        }
+        input[type="radio"][id="blue"]:checked + *::before {
+          background: radial-gradient(
+            Blue 0%,
+            Blue 40%,
+            transparent 50%,
+            transparent
+          );
+          border-color: black;
+        }
+        input[type="radio"][id="blue"]:checked + * {
+          color: Blue;
+        }
+      }
+      .info {
+        h5 {
+          font-size: 20px;
+          font-weight: bold;
+        }
+        span {
+          font-size: 20px;
+        }
+      }
+      .check {
+        p {
+        }
+      }
     }
+  }
+  .modal-footer {
+    height: 100px;
+    .btn {
+      margin: 30px;
+      width: 100px;
+    }
+  }
 }
