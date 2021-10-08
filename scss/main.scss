@@ -4,281 +4,284 @@
 
 html,
 body {
-  height: 100%;
-  font-size: 16pt;
+    height: 100%;
+    font-size: 16pt;
 
-  @include mixins.tablet {
-    font-size: 15pt;
-  }
+    @include mixins.tablet {
+        font-size: 15pt;
+    }
 
-  @include mixins.desktop {
-    font-size: 14pt;
-  }
+    @include mixins.desktop {
+        font-size: 14pt;
+    }
 }
 
 // HOME PAGE //
 #autoscroll-btn {
-  display: block;
-  @include mixins.desktop {
-    display: none;
-  }
+    display: block;
+    @include mixins.desktop {
+        display: none;
+    }
 }
 
 #mobile-tablet-menu-container {
-  z-index: 100;
-  display: block;
-  @include mixins.desktop {
-    display: none;
-  }
-
-  button {
-    z-index: 1;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .fas {
-      text-align: center;
-      font-size: 25pt;
-    }
-  }
-
-  .offcanvas-header {
-    background-color: variables.$third-color;
-  }
-
-  .offcanvas-body {
-    background-color: variables.$secondary-color;
-  }
-}
-
-.container-fluid {
-  #left-ads {
-    background-image: url("../assets/images/ad-left.jfif");
-    background-position: top;
-  }
-
-  #right-ads {
-    background-image: url("../assets/images/ad-right.jfif");
-    background-position: top;
-  }
-
-  #header {
-    height: 100vh;
-    background-color: variables.$third-color;
-
+    z-index: 100;
+    display: block;
     @include mixins.desktop {
-      height: 150px;
+        display: none;
     }
 
-    .logo-wrapper {
-      .img-wrapper {
-        width: 100%;
-        padding: 10pt;
-        img {
-          width: 100%;
-        }
-
-        @include mixins.desktop {
-          width: 50%;
-        }
-      }
-    }
-
-    #desktop-menu-container {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-
-      //border: 2px solid red;
-      display: none;
-
-      @include mixins.desktop {
-        display: block;
-      }
-    }
-  }
-
-  #main {
-    background-color: variables.$secondary-color;
-
-    .filter {
-      padding: 15pt;
-      display: none;
-      font-size: 0.65rem;
-
-      @include mixins.desktop {
-        display: block;
-      }
-
-      background-color: white;
-    }
-
-    .products-showcase {
-      background-color: variables.$secondary-color;
-
-      .card {
-        padding: 15pt;
+    button {
+        z-index: 1;
+        width: 70px;
+        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: box-shadow 0.2s linear;
-
-        &:hover,
-        &:active {
-          z-index: 1;
-          box-shadow: 0px 0px 20px 0px variables.$primary-color-hover;
+        .fas {
+            text-align: center;
+            font-size: 25pt;
         }
-
-        .img-wrapper {
-          max-width: 300px;
-          img {
-            width: 100%;
-          }
-        }
-
-        .card-body {
-          text-align: center;
-          max-width: 300px;
-        }
-      }
     }
-  }
 
-  #footer {
-    background-color: variables.$third-color;
-
-    .contact-container {
-      flex-direction: column;
-      font-size: 1rem;
-
-      @include mixins.tablet {
-        flex-direction: row;
-        font-size: 0.9em;
-      }
-
-      @include mixins.desktop {
-        font-size: 0.8em;
-      }
-
-      ul {
-        list-style: none;
-      }
+    .offcanvas-header {
+        background-color: variables.$third-color;
     }
-  }
+
+    .offcanvas-body {
+        background-color: variables.$secondary-color;
+    }
+}
+
+.container-fluid {
+    #left-ads {
+        background-image: url("../assets/images/ad-left.jfif");
+        background-position: top;
+    }
+
+    #right-ads {
+        background-image: url("../assets/images/ad-right.jfif");
+        background-position: top;
+    }
+
+    #header {
+        height: 100vh;
+        background-color: variables.$third-color;
+
+        @include mixins.desktop {
+            height: 150px;
+        }
+
+        .logo-wrapper {
+            .img-wrapper {
+                width: 100%;
+                padding: 10pt;
+                img {
+                    width: 100%;
+                }
+
+                @include mixins.desktop {
+                    width: 50%;
+                }
+            }
+        }
+
+        #desktop-menu-container {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            //border: 2px solid red;
+            display: none;
+
+            @include mixins.desktop {
+                display: block;
+            }
+        }
+    }
+
+    #main {
+        background-color: variables.$secondary-color;
+
+        .filter {
+            padding: 15pt;
+            display: none;
+            font-size: 0.65rem;
+
+            @include mixins.desktop {
+                display: block;
+            }
+
+            background-color: white;
+        }
+
+        .products-showcase {
+            background-color: variables.$secondary-color;
+
+            .card {
+                padding: 15pt;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: box-shadow 0.2s linear, transform 0.2s ease;
+
+                &:hover,
+                &:active {
+                    z-index: 1;
+                    box-shadow: 0px 0px 20px 0px variables.$primary-color-hover;
+                    transform: scale(1.007);
+                }
+
+                .img-wrapper {
+                    max-width: 300px;
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .card-body {
+                    text-align: center;
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+
+    #footer {
+        background-color: variables.$third-color;
+
+        .contact-container {
+            flex-direction: column;
+            font-size: 1rem;
+
+            @include mixins.tablet {
+                flex-direction: row;
+                font-size: 0.9em;
+            }
+
+            @include mixins.desktop {
+                font-size: 0.8em;
+            }
+
+            ul {
+                list-style: none;
+            }
+        }
+    }
 }
 
 // CHECKOUT //
 .container-fluid {
-  #checkout-header {
-    height: 100px;
-    background-color: variables.$third-color;
-    #cart-logo {
-      display: none;
-      @include mixins.tablet {
-        display: unset;
-      }
+    #checkout-header {
+        height: 100px;
+        background-color: variables.$third-color;
+        #cart-logo {
+            display: none;
+            @include mixins.tablet {
+                display: unset;
+            }
+        }
+        i {
+            font-size: 1.5rem;
+        }
+        .logo-container {
+            display: none;
+            height: 40px;
+            @include mixins.tablet {
+                display: unset;
+            }
+            img {
+                height: 100%;
+            }
+        }
+        #continue {
+            background-color: variables.$primary-color;
+            &:hover {
+                background-color: variables.$primary-color-hover;
+            }
+            @include mixins.tablet {
+                display: none;
+            }
+        }
+        a:link,
+        a:visited {
+            color: black;
+        }
     }
-    i {
-      font-size: 1.5rem;
+    #checkout-main {
+        .img-wrapper {
+            padding: 30px;
+            @include mixins.desktop {
+                padding: 20px;
+            }
+        }
     }
-    .logo-container {
-      display: none;
-      height: 40px;
-      @include mixins.tablet {
-        display: unset;
-      }
-      img {
-        height: 100%;
-      }
-    }
-    #continue {
-      background-color: variables.$primary-color;
-      &:hover {
-        background-color: variables.$primary-color-hover;
-      }
-      @include mixins.tablet {
+    #adleft,
+    #adright {
         display: none;
-      }
+        @include mixins.desktop {
+            background-color: variables.$secondary-color;
+            display: unset;
+        }
     }
-    a:link,
-    a:visited {
-      color: black;
+    .price-sm-container {
+        display: unset;
+        @include mixins.tablet {
+            display: none;
+        }
+        #price-sm {
+            height: 40px;
+            display: unset;
+            #total {
+                float: left;
+            }
+            #amount {
+                float: right;
+            }
+        }
     }
-  }
-  #checkout-main {
-    .img-wrapper {
-      padding: 30px;
-      @include mixins.desktop {
-        padding: 20px;
-      }
+    #price-md-lg {
+        display: none;
+        height: 600px;
+        ul {
+            background-color: transparent;
+            width: 100%;
+            li {
+                list-style-type: none;
+                list-style-position: unset;
+            }
+            hr {
+                margin: 5px;
+            }
+        }
+        @include mixins.tablet {
+            display: unset;
+        }
+        button {
+            margin-bottom: 0px;
+            background-color: variables.$primary-color;
+            &:hover {
+                background-color: variables.$primary-color-hover;
+            }
+        }
     }
-  }
-  #adleft,
-  #adright {
-    display: none;
-    @include mixins.desktop {
-      background-color: variables.$secondary-color;
-      display: unset;
+    #price-box,
+    #price-num {
+        display: none;
+        @include mixins.desktop {
+            display: unset;
+        }
     }
-  }
-  .price-sm-container {
-    display: unset;
-    @include mixins.tablet {
-      display: none;
-    }
-    #price-sm {
-      height: 40px;
-      display: unset;
-      #total {
-        float: left;
-      }
-      #amount {
-        float: right;
-      }
-    }
-  }
-  #price-md-lg {
-    display: none;
-    height: 600px;
-    ul {
-      background-color: transparent;
-      width: 100%;
-      li {
-        list-style-type: none;
-        list-style-position: unset;
-      }
-      hr {
-        margin: 5px;
-      }
-    }
-    @include mixins.tablet {
-      display: unset;
-    }
-    button {
-      margin-bottom: 0px;
-      background-color: variables.$primary-color;
-      &:hover {
-        background-color: variables.$primary-color-hover;
-      }
-    }
-  }
-  #price-box,
-  #price-num {
-    display: none;
-    @include mixins.desktop {
-      display: unset;
-    }
-  }
 }
+
 #btn-reset {
-  margin-top: 10px;
+    margin-top: 10px;
 }
+
 #btn-submit {
-  margin-top: 5px;
-  background-color: variables.$primary-color;
-  &:hover {
-    background-color: variables.$primary-color-hover;
-  }
+    margin-top: 5px;
+    background-color: variables.$primary-color;
+    &:hover {
+        background-color: variables.$primary-color-hover;
+    }
 }
