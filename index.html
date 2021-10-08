@@ -5,95 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grupp 3</title>
+        <!-- OWN CSS -->
+        <link rel="stylesheet" href="css/main.css" />
 
-    <link rel="stylesheet" href="css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
+        <!-- BOOTSTRAP -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        />
+
+        <!-- FONT AWSOME -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
+    
   </head>
   <body>
-    <div class="container-fluid">
-      <div id="header" class="row justify-content-center">
-        <div class="col-12 col-lg-8">test</div>
-      </div>
-      <div id="main" class="row justify-content-center">
-        <div class="col-12 col-lg-8 d-flex flex-wrap">
-          <div
-            class="
-              product
-              col-12 col-md-6 col-lg-4
-              d-flex
-              flex-column
-              justify-content-center
-              align-items-center
-              btn-group btn-group-sm
-            "
-          >
-            <div class="img-wrapper">
-              <img src="" alt="" />
-            </div>
-            <span class="product-name">TestProdukt1</span>
-          </div>
-          <div
-            class="
-              product
-              col-12 col-md-6 col-lg-4
-              d-flex
-              flex-column
-              justify-content-center
-              align-items-center
-            "
-          >
-            <div class="img-wrapper">
-              <img src="" alt="" />
-            </div>
-            <span class="product-name">TestProdukt1</span>
-          </div>
-          <div
-            class="
-              product
-              col-12 col-md-6 col-lg-4
-              d-flex
-              flex-column
-              justify-content-center
-              align-items-center
-            "
-          >
-            <div class="img-wrapper">
-              <img src="" alt="" />
-            </div>
-            <span class="product-name">TestProdukt1</span>
-          </div>
-          <div
-            class="
-              product
-              col-12 col-md-6 col-lg-4
-              d-flex
-              flex-column
-              justify-content-center
-              align-items-center
-            "
-          >
-            <div class="img-wrapper">
-              <img src="" alt="" />
-            </div>
-            <span class="product-name">TestProdukt1</span>
-          </div>
-        </div>
-      </div>
-      <div id="footer" class="row justify-content-center">
-        <div class="col-12 col-lg-8">test</div>
-      </div>
-    </div>
+    <!-- MODAL STARTS HERE -->
     <div
       class="modal fade"
       id="productModal"
@@ -101,108 +34,424 @@
       aria-labelledby="ModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="ModalLabel">Apple iPhone 13</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="container">
-                <div class="row">
-                    <div id="carouselIndicators" class="carousel carousel-dark slide col-12 col-md-4" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">Apple iPhone 13</h5>
+                <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                ></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                        <div id="carouselIndicators" class="carousel carousel-dark slide col-12 col-md-4" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../Grupp_3_Git/images/product1-front.jpg" class="d-block w-100" alt="phone-front">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../Grupp_3_Git/images/product1-colors.jpg" class="d-block w-100" alt="phone-colors">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../Grupp_3_Git/images/product1-camera.jpg" class="d-block w-100" alt="phone-camera">
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../Grupp_3_Git/images/product1-front.jpg" class="d-block w-100" alt="phone-front">
                         </div>
-                        <div class="carousel-item">
-                            <img src="../Grupp_3_Git/images/product1-colors.jpg" class="d-block w-100" alt="phone-colors">
+                        <div class="row d-flex gap-3">  
+                            <h2>Color</h2>
+                            <div class="color col-12">
+                            <form>
+                                <input type="radio" id="black" name="fav_language" value="black">
+                                <label for="black"></label><br>
+                            </form>
+                            <form>
+                                <input type="radio" id="white" name="fav_language" value="white">
+                                <label for="white"></label><br>
+                            </form>
+                            <form>
+                                <input type="radio" id="red" name="fav_language" value="red">
+                                <label for="red"></label>
+                            </form>
+                            <form>
+                                <input type="radio" id="blue" name="fav_language" value="blue">
+                                <label for="blue"></label>
+                            </form>
+                            </div>
+                            <div class="info col-12">
+                            <h5>Product information:</h5>
+                            <span>
+                                Large screen, ultra-fast performance and advanced dual camera systems with both wide angle, ultra wide angle and cinematic mode.
+                            </span>
+                            </div>
+                            <div class="check col-12">
+                                <p><i class="fas fa-chevron-circle-down icon-3x"></i> 6.1 ”SuperRetina XDR screen</p>
+                                <p><i class="fas fa-chevron-circle-down icon-3x"></i> A15 Bionic chip</p>
+                                <p><i class="fas fa-chevron-circle-down icon-3x"></i> Dual camera system with cinematic mode</p>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="../Grupp_3_Git/images/product1-camera.jpg" class="d-block w-100" alt="phone-camera">
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                  </div>
-                <div class="row d-flex gap-3">  
-                    <h2>Color</h2>
-                    <div class="color col-12">
-                        <form>
-                            <input type="radio" id="black" name="fav_language" value="black">
-                            <label for="black"></label><br>
-                        </form>
-                        <form>
-                            <input type="radio" id="white" name="fav_language" value="white">
-                            <label for="white"></label><br>
-                        </form>
-                        <form>
-                            <input type="radio" id="red" name="fav_language" value="red">
-                            <label for="red"></label>
-                        </form>
-                        <form>
-                            <input type="radio" id="blue" name="fav_language" value="blue">
-                            <label for="blue"></label>
-                        </form>
-                    </div>
-                    <div class="info col-12">
-                        <h5>Product information:</h5>
-                        <span>
-                            Large screen, ultra-fast performance and advanced dual camera systems with both wide angle, ultra wide angle and cinematic mode.
-                        </span>
-                    </div>
-                    <div class="check col-12">
-                        <p><i class="fas fa-chevron-circle-down icon-3x"></i> 6.1 ”SuperRetina XDR screen</p>
-                        <p><i class="fas fa-chevron-circle-down icon-3x"></i> A15 Bionic chip</p>
-                        <p><i class="fas fa-chevron-circle-down icon-3x"></i> Dual camera system with cinematic mode</p>
                     </div>
                 </div>
-              </div>
+                <div class="modal-footer position-relative">
+                    <button
+                        type="button"
+                        class="
+                        btn btn-secondary
+                        position-absolute
+                        bottom-0
+                        start-0
+                        btn-lg
+                        "
+                        data-bs-dismiss="modal"
+                    >
+                        <i class="fas fa-arrow-circle-left"></i>
+                    </button>
+                    <button
+                        type="button"
+                        class="btn btn-secondary position-absolute bottom-0 end-0 btn-lg"
+                    >
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
             </div>
-          <div class="modal-footer position-relative">
-            <button
-              type="button"
-              class="
-                btn btn-secondary
-                position-absolute
-                bottom-0
-                start-0
-                btn-lg
-              "
-              data-bs-dismiss="modal"
-            >
-              <i class="fas fa-arrow-circle-left"></i>
-            </button>
-            <button
-              type="button"
-              class="btn btn-secondary position-absolute bottom-0 end-0 btn-lg"
-            >
-              <i class="fas fa-shopping-cart"></i>
-            </button>
-          </div>
-      </div>
+        </div>
     </div>
+
+    <body>
+        <div id="mobile-tablet-menu-container">
+            <!-- HAMBURGER -->
+            <button
+                id="menu_button"
+                class="
+                    btn btn-light
+                    position-fixed
+                    bottom-0
+                    end-0
+                    m-3
+                    rounded-circle
+                "
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasMenu"
+            >
+                <i
+                    class="fas fa-bars"
+                    style="font-size: 25pt; padding: 3pt"
+                ></i>
+            </button>
+            <!-- OFFCANVAS -->
+            <div
+                class="offcanvas offcanvas-bottom h-100"
+                id="offcanvasMenu"
+                data-bs-backdrop="false"
+            >
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Menu</h1>
+                </div>
+                <div class="offcanvas-body position-relative">
+                    <h6>Filters</h6>
+                    <!-- CLOSE BUTTON -->
+                    <button
+                        type="button"
+                        class="
+                            btn btn-light
+                            text-reset
+                            position-absolute
+                            bottom-0
+                            end-0
+                            m-3
+                        "
+                        data-bs-dismiss="offcanvas"
+                    >
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <!-- CART BUTTON -->
+                    <a href="./pages/checkout.html">
+                        <button
+                            type="button"
+                            class="
+                                btn btn-light
+                                position-absolute
+                                bottom-0
+                                start-50
+                                translate-middle-x
+                                mb-3
+                            "
+                        >
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    </a>
+                    
+                    <!-- HOME BUTTON -->
+                    <a href="#">
+                        <button
+                            type="button"
+                            class="
+                                btn btn-light
+                                position-absolute
+                                bottom-0
+                                start-0
+                                m-3
+                            "
+                        >
+                        <i class="fas fa-home"></i>
+                    </button>
+                    </a>
+                    
+                    <!-- CHECKBOXES -->
+                    <div class="form-check">
+                        <input
+                            class="form-check-input "
+                            type="checkbox"
+                            id="check-1"
+                        />
+                        <label class="form-check-label" for="check-1"></label>
+                            Samsung</label
+                        >
+                    </div>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input "
+                            type="checkbox"
+                            id="check-1"
+                        />
+                        <label class="form-check-label" for="check-1"></label>
+                            Huawei</label
+                        >
+                    </div>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input "
+                            type="checkbox"
+                            id="check-1"
+                        />
+                        <label class="form-check-label" for="check-1"></label>
+                            Apple</label
+                        >
+                    </div>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input "
+                            type="checkbox"
+                            id="check-1"
+                        />
+                        <label class="form-check-label" for="check-1"></label>
+                            Motorola</label
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid d-flex flex-column">
+            <div id="header" class="row justify-content-center">
+                <div class="col-10 d-flex justify-content-center position-relative">
+                    <a href="#" class="d-flex">
+                        <div
+                            class="
+                                logo-wrapper
+                                d-flex
+                                justify-content-center
+                                align-items-center
+                            "
+                        >
+                            <div class="img-wrapper">
+                                <img src="assets/logo.png" alt="Logo" />
+                            </div>
+                        </div>
+                    </a>
+                    <!-- DESKTOP MENU -->
+                    <div id="desktop-menu-container">
+                        <a href="./pages/checkout.html">
+                            <button
+                                type="button"
+                                class="
+                                    btn btn-light
+                                    m-3
+                                "
+                            >
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <!-- AUTOSCROLL BUTTON -->
+                    <a id="autoscroll-btn" class="
+                            btn btn-light
+                            rounded-circle 
+                            position-absolute 
+                            bottom-0 
+                            start-50 
+                            translate-middle-x
+                            mb-3
+                        " href="#main">
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="main" class="row justify-content-center">
+                <!-- FILTER MENU -->
+                <div class="filter col-lg-2 position-relative">
+                    <h6>Filters</h6>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input "
+                            type="checkbox"
+                            id="check-1"
+                        />
+                        <label class="form-check-label" for="check-1"></label>
+                            Samsung</label
+                        >
+                    </div>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="check-1"
+                        />
+                        <label class="form-check-label" for="check-1"></label>
+                            Huawei</label
+                        >
+                    </div>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="check-1"
+                        />
+                        <label class="form-check-label" for="check-1"></label>
+                            Apple</label
+                        >
+                    </div>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="check-1"
+                        />
+                        <label class="form-check-label" for="check-1"></label>
+                            Motorola</label
+                        >
+                    </div>
+                </div>
+                <!-- PRODUCT SHOWCASE -->
+                <div
+                    class="
+                        products-showcase
+                        col-12 col-lg-8
+                        d-flex
+                        justify-content-center
+                        justify-content-md-start
+                        justify-content-lg-start
+                        align-items-start
+                        flex-wrap
+                        p-3
+                    "
+                >
+                    <div class="card col-12 col-md-6 col-lg-4">
+                        <div class="img-wrapper">
+                            <img
+                                src="assets/images/huawei-p40-lite-smartphone-6128gb-midnight-black.webp"
+                                class="card-img-top"
+                                alt="huawei-p40-lite-smartphone-6128gb-midnight-black"
+                            />
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-title">
+                                Huawei P40 Lite - Smartphone 6128gb Midnight
+                                Black
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-md-6 col-lg-4">
+                        <div class="img-wrapper">
+                            <img
+                                src="assets/images/iphone-13-pro-5g-smartphone-128gb-graphite.webp"
+                                class="card-img-top"
+                                alt="iphone-13-pro-5g-smartphone-128gb-graphite"
+                            />
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-title">
+                                iPhone 13 Pro - 5g Smartphone 128gb Graphite
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-md-6 col-lg-4">
+                        <div class="img-wrapper">
+                            <img
+                                src="assets/images/samsung-galaxy-s20-fe-4g-smartphone-6128gb-cloud-navy.webp"
+                                class="card-img-top"
+                                alt="samsung-galaxy-s20-fe-4g-smartphone-6128gb-cloud-navy"
+                            />
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-title">
+                                Samsung Galaxy S20 - 4g Smartphone 6128gb Cloud
+                                Navy
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-md-6 col-lg-4">
+                        <div class="img-wrapper">
+                            <img
+                                src="assets/images/samsung-galaxy-z-flip-3-smartphone-8256gb-trendy-green.webp"
+                                class="card-img-top"
+                                alt="samsung-galaxy-z-flip-3-smartphone-8256gb-trendy-green"
+                            />
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-title">
+                                Samsung Galaxy Z Flip 3 - Smartphone 8256gb
+                                Trendy Green
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer" class="row justify-content-center">
+                <div class="col-12 col-lg-10 position-relative">
+                    <h5>FOOTER</h5>
+                    <a id="autoscroll-btn" class="
+                            btn btn-light
+                            rounded-circle 
+                            position-absolute
+                            top-0
+                            start-50
+                            translate-middle-x
+                            mt-3
+                            
+                        " href="#header">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
-      crossorigin="anonymous"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
     ></script>
-  </body>
 </html>
