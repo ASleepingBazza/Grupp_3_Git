@@ -153,119 +153,136 @@ body {
   list-style: none;
 }
 
-.container-fluid #checkout-header {
+#body-checkout {
+  background-color: #d7ebff;
+}
+#body-checkout #checkout-header {
   height: 100px;
   background-color: #b2c4ff;
 }
-.container-fluid #checkout-header #cart-logo {
+#body-checkout #checkout-header #header-wrapper {
+  height: 100px;
+}
+#body-checkout #checkout-header #cart-logo {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .container-fluid #checkout-header #cart-logo {
+  #body-checkout #checkout-header #cart-logo {
     display: unset;
   }
 }
-.container-fluid #checkout-header i {
+#body-checkout #checkout-header i {
   font-size: 1.5rem;
 }
-.container-fluid #checkout-header .logo-container {
+#body-checkout #checkout-header .logo-container {
   display: none;
   height: 40px;
 }
 @media screen and (min-width: 768px) {
-  .container-fluid #checkout-header .logo-container {
+  #body-checkout #checkout-header .logo-container {
     display: unset;
   }
 }
-.container-fluid #checkout-header .logo-container img {
+#body-checkout #checkout-header .logo-container img {
   height: 100%;
 }
-.container-fluid #checkout-header #continue {
+#body-checkout #checkout-header #continue {
   background-color: #004c8c;
 }
-.container-fluid #checkout-header #continue:hover {
+#body-checkout #checkout-header #continue:hover {
   background-color: #003d6e;
 }
 @media screen and (min-width: 768px) {
-  .container-fluid #checkout-header #continue {
+  #body-checkout #checkout-header #continue {
     display: none;
   }
 }
-.container-fluid #checkout-header a:link,
-.container-fluid #checkout-header a:visited {
+#body-checkout #checkout-header a:link,
+#body-checkout #checkout-header a:visited {
   color: black;
 }
-.container-fluid #checkout-main .img-wrapper {
+#body-checkout #checkout-main .img-wrapper {
   padding: 30px;
 }
 @media screen and (min-width: 992px) {
-  .container-fluid #checkout-main .img-wrapper {
+  #body-checkout #checkout-main .img-wrapper {
     padding: 20px;
   }
 }
-.container-fluid #adleft,
-.container-fluid #adright {
+#body-checkout #adleft {
   display: none;
 }
 @media screen and (min-width: 992px) {
-  .container-fluid #adleft,
-.container-fluid #adright {
-    background-color: #d7ebff;
+  #body-checkout #adleft {
+    background-image: url("../assets/images/ad-left.jfif");
+    background-position: top;
     display: unset;
+    height: 913px;
   }
 }
-.container-fluid .price-sm-container {
+#body-checkout #adright {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  #body-checkout #adright {
+    background-image: url("../assets/images/ad-right.jfif");
+    background-position: top;
+    display: unset;
+    height: 913px;
+  }
+}
+#body-checkout .price-sm-container {
   display: unset;
 }
 @media screen and (min-width: 768px) {
-  .container-fluid .price-sm-container {
+  #body-checkout .price-sm-container {
     display: none;
   }
 }
-.container-fluid .price-sm-container #price-sm {
+#body-checkout .price-sm-container #price-sm {
   height: 40px;
   display: unset;
 }
-.container-fluid .price-sm-container #price-sm #total {
+#body-checkout .price-sm-container #price-sm #total {
   float: left;
 }
-.container-fluid .price-sm-container #price-sm #amount {
+#body-checkout .price-sm-container #price-sm #amount {
   float: right;
 }
-.container-fluid #price-md-lg {
+#body-checkout #price-md-lg {
   display: none;
-  height: 600px;
+  background-color: white;
 }
-.container-fluid #price-md-lg ul {
+#body-checkout #price-md-lg ul {
   background-color: transparent;
   width: 100%;
 }
-.container-fluid #price-md-lg ul li {
+#body-checkout #price-md-lg ul li {
   list-style-type: none;
   list-style-position: unset;
 }
-.container-fluid #price-md-lg ul hr {
+#body-checkout #price-md-lg ul hr {
   margin: 5px;
 }
 @media screen and (min-width: 768px) {
-  .container-fluid #price-md-lg {
+  #body-checkout #price-md-lg {
     display: unset;
   }
 }
-.container-fluid #price-md-lg button {
-  margin-bottom: 0px;
+#body-checkout #price-md-lg button {
+  margin-bottom: 10px;
   background-color: #004c8c;
 }
-.container-fluid #price-md-lg button:hover {
+#body-checkout #price-md-lg button:hover {
   background-color: #003d6e;
 }
-.container-fluid #price-box,
-.container-fluid #price-num {
+#body-checkout #price-box,
+#body-checkout #price-num {
   display: none;
 }
 @media screen and (min-width: 992px) {
-  .container-fluid #price-box,
-.container-fluid #price-num {
+  #body-checkout #price-box,
+#body-checkout #price-num {
     display: unset;
   }
 }

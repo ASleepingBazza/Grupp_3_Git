@@ -168,12 +168,15 @@ body {
     }
   }
 }
-
 // CHECKOUT //
-.container-fluid {
+#body-checkout {
+  background-color: variables.$secondary-color;
   #checkout-header {
     height: 100px;
     background-color: variables.$third-color;
+    #header-wrapper {
+      height: 100px;
+    }
     #cart-logo {
       display: none;
       @include mixins.tablet {
@@ -215,12 +218,22 @@ body {
       }
     }
   }
-  #adleft,
+  #adleft {
+    display: none;
+    @include mixins.desktop {
+      background-image: url("../assets/images/ad-left.jfif");
+      background-position: top;
+      display: unset;
+      height: 913px;
+    }
+  }
   #adright {
     display: none;
     @include mixins.desktop {
-      background-color: variables.$secondary-color;
+      background-image: url("../assets/images/ad-right.jfif");
+      background-position: top;
       display: unset;
+      height: 913px;
     }
   }
   .price-sm-container {
@@ -241,7 +254,7 @@ body {
   }
   #price-md-lg {
     display: none;
-    height: 600px;
+    background-color: white;
     ul {
       background-color: transparent;
       width: 100%;
@@ -257,7 +270,7 @@ body {
       display: unset;
     }
     button {
-      margin-bottom: 0px;
+      margin-bottom: 10px;
       background-color: variables.$primary-color;
       &:hover {
         background-color: variables.$primary-color-hover;
