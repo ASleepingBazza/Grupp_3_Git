@@ -141,97 +141,106 @@ body {
   }
 }
 // CHECKOUT //
-#checkout-header {
-  height: 100px;
-  background-color: variables.$third-color;
-  #cart-logo {
+.container-fluid {
+  #checkout-header {
+    height: 100px;
+    background-color: variables.$third-color;
+    #cart-logo {
+      display: none;
+      @include mixins.tablet {
+        display: unset;
+      }
+    }
+    i {
+      font-size: 1.5rem;
+    }
+    .logo-container {
+      display: none;
+      height: 40px;
+      @include mixins.tablet {
+        display: unset;
+      }
+      img {
+        height: 100%;
+      }
+    }
+    #continue {
+      background-color: variables.$primary-color;
+      &:hover {
+        background-color: variables.$primary-color-hover;
+      }
+      @include mixins.tablet {
+        display: none;
+      }
+    }
+    a:link,
+    a:visited {
+      color: black;
+    }
+  }
+  #checkout-main {
+    .img-wrapper {
+      padding: 30px;
+      @include mixins.desktop {
+        padding: 20px;
+      }
+    }
+  }
+  #adleft,
+  #adright {
     display: none;
-    @include mixins.tablet {
+    @include mixins.desktop {
+      background-color: variables.$secondary-color;
       display: unset;
     }
   }
-  i {
-    font-size: 25pt;
-  }
-  .logo-container {
-    display: none;
-    height: 40px;
-    @include mixins.tablet {
-      display: unset;
-    }
-    img {
-      height: 100%;
-    }
-  }
-  button {
-    background-color: variables.$primary-color;
-    &:hover {
-      background-color: variables.$primary-color-hover;
-    }
+  .price-sm-container {
+    display: unset;
     @include mixins.tablet {
       display: none;
     }
-  }
-  a:link,
-  a:visited {
-    color: black;
-  }
-}
-#checkout-main {
-  .img-wrapper {
-    padding: 5px;
-  }
-}
-#adleft,
-#adright {
-  display: none;
-  @include mixins.desktop {
-    background-color: variables.$secondary-color;
-    display: unset;
-  }
-}
-#price-sm {
-  height: 40px;
-  #total {
-    float: left;
-  }
-  #amount {
-    float: right;
-  }
-  @include mixins.tablet {
-    display: none !important;
-  }
-}
-#price-md-lg {
-  display: none;
-  height: 600px;
-  ul {
-    background-color: transparent;
-    width: 100%;
-    li {
-      list-style-type: none;
-      list-style-position: unset;
-    }
-    hr {
-      margin: 5px;
+    #price-sm {
+      height: 40px;
+      display: unset;
+      #total {
+        float: left;
+      }
+      #amount {
+        float: right;
+      }
     }
   }
-  @include mixins.tablet {
-    display: unset;
-  }
-  button {
-    margin-bottom: 0px;
-    background-color: variables.$primary-color;
-    &:hover {
-      background-color: variables.$primary-color-hover;
+  #price-md-lg {
+    display: none;
+    height: 600px;
+    ul {
+      background-color: transparent;
+      width: 100%;
+      li {
+        list-style-type: none;
+        list-style-position: unset;
+      }
+      hr {
+        margin: 5px;
+      }
+    }
+    @include mixins.tablet {
+      display: unset;
+    }
+    button {
+      margin-bottom: 0px;
+      background-color: variables.$primary-color;
+      &:hover {
+        background-color: variables.$primary-color-hover;
+      }
     }
   }
-}
-#price-box,
-#price-num {
-  display: none;
-  @include mixins.desktop {
-    display: unset;
+  #price-box,
+  #price-num {
+    display: none;
+    @include mixins.desktop {
+      display: unset;
+    }
   }
 }
 #btn-reset {
