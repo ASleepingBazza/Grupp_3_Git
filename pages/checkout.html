@@ -16,29 +16,48 @@
 </head>
 <body>
     <div class="container-fluid">
+        <!-- HEADER -->
         <div id="checkout-header" class="row">
             <div class="col-12 d-flex justify-content-between align-items-center">
-                <a href="../index.html"><i id="arrow-back" class="fas fa-arrow-circle-left"></i></a>
+                <!-- BUTTON TO INDEX.HTML, LOGO AND CART -->
+                <a href="../index.html">
+                    <button class="btn btn-light">
+                        <i id="arrow-back" class="fas fa-arrow-circle-left"></i>
+                    </button>
+                </a>
                 <div class="logo-container">
                     <img src="../assets/logo.png" alt="Logo">
                 </div>
                 <i id="cart-logo" class="fas fa-shopping-cart"></i>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gå vidare</button>
+                <!-- BUTTON CONTINUE -->
+                <button id="continue" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gå vidare</button>
             </div>
         </div>
+        <!-- PRICE CONTAINER PHONE  -->
         <div class="row">
+            <div class="price-sm-container">
             <div id="price-sm" class="col-12 d-flex align-items-center">
                 <span id="total">Totalt:</span>
-                <div class="d-flex justify-content-end w-100"><span id="amount"><b>30 860kr</b></span></div>
+                <div class="d-flex justify-content-end w-100">
+                    <span id="amount"><b>30 860kr</b></span>
+                </div>
             </div>
         </div>
+        </div>
         <div class="row h-100">
-            <div id="adleft" class="col-lg-2"></div>
+            <!-- AD LEFT -->
+            <div id="adleft" class="col-lg-2">
+                <!-- CONTENT -->
+            </div>
+            <!-- CHECKOUT MAIN -->
             <div id="checkout-main" class="col-sm-12 col-md-10 col-lg-6 justify-content-center">
                 <div id="main" class="row justify-content-center">
+                    <!-- CONTENT -->
+                    <!-- HUAWEI P40 -->
                     <div class="card col-12">
                         <div class="row">
                         <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
+                            <!-- HUAWEI P40 IMAGE-->
                             <div class="img-wrapper">
                                 <img
                                     src="../assets/images/huawei-p40-lite-smartphone-6128gb-midnight-black.webp"
@@ -47,6 +66,7 @@
                             />
                             </div>
                         </div>
+                        <!-- HUAWEI P40 INFO -->
                         <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
                         <div class="card-body">
                             <div class="card-title">
@@ -57,13 +77,17 @@
                             </div>
                         </div>
                     </div>
-                    <div id="price-box" class="col-lg-4 d-flex justify-content-center align-items-center">
-                        <span id="price-num"><b>2190kr</b></span></div>
+                    <!-- HUAWEI P40 PRICE -->
+                        <div id="price-box" class="col-lg-4 d-flex justify-content-center align-items-center">
+                            <span id="price-num"><b>2190kr</b></span>
+                        </div>
+                        </div>
                     </div>
-                    </div>
+                    <!-- IPHONE 13 PRO -->
                     <div class="card col-12">
                         <div class="row">
                         <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
+                            <!-- IPHONE 13 PRO IMAGE -->
                             <div class="img-wrapper">
                                 <img
                                     src="../assets/images/iphone-13-pro-5g-smartphone-128gb-graphite.webp"
@@ -72,6 +96,7 @@
                             />
                             </div>
                         </div>
+                        <!-- IPHONE 13 PRO INFO -->
                         <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
                         <div class="card-body">
                             <div class="card-title">
@@ -81,13 +106,16 @@
                             </div>
                         </div>
                     </div>
-                    <div id="price-box" class="col-lg-4 d-flex justify-content-center align-items-center">
-                        <span id="price-num"><b>13 490kr</b></span></div>
+                    <!-- IPHONE 13 PRO PRICE -->
+                        <div id="price-box" class="col-lg-4 d-flex justify-content-center align-items-center">
+                            <span id="price-num"><b>13 490kr</b></span></div>
+                        </div>
                     </div>
-                    </div>
+                    <!-- SAMSUNG GALAXY S20 -->
                     <div class="card col-12">
                         <div class="row">
                         <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
+                            <!-- SAMSUNG GALAXY S20 IMAGE -->
                             <div class="img-wrapper">
                                 <img
                                     src="../assets/images/samsung-galaxy-s20-fe-4g-smartphone-6128gb-cloud-navy.webp"
@@ -96,6 +124,7 @@
                             />
                             </div>
                         </div>
+                        <!-- SAMSUNG GALAXY S20 INFO -->
                         <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
                         <div class="card-body">
                             <div class="card-title">
@@ -106,22 +135,26 @@
                             </div>
                         </div>
                     </div>
-                    <div id="price-box" class="col-lg-4 d-flex justify-content-center align-items-center">
-                        <span id="price-num"><b>5590kr</b></span></div>
+                    <!-- SAMSUNG GALAXY S20 PRICE -->
+                        <div id="price-box" class="col-lg-4 d-flex justify-content-center align-items-center">
+                            <span id="price-num"><b>5590kr</b></span></div>
+                        </div>
                     </div>
-                    </div>
+                    <!-- SAMSUNG GALAXY Z FLIP 3 -->
                     <div class="card col-12">
                         <div class="row">
                         <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
+                            <!-- SAMSUNG GALAXY Z FLIP 3 IMAGE -->
                             <div class="img-wrapper">
                                 <img
                                     src="../assets/images/samsung-galaxy-z-flip-3-smartphone-8256gb-trendy-green.webp"
                                     class="card-img-top"
                                     alt="samsung-galaxy-z-flip-3-smartphone-8256gb-trendy-green"
-                            />
+                                    />
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
+                            <!-- SAMSUNG GALAXY Z FLIP 3 INFO -->
                         <div class="card-body">
                             <div class="card-title">
                                 Samsung Galaxy Z Flip 3 - Smartphone 8256gb
@@ -131,12 +164,14 @@
                             </div>
                         </div>
                     </div>
-                    <div id="price-box" class="col-lg-4 d-flex justify-content-center align-items-center">
-                        <span id="price-num"><b>9590kr</b></span></div>
-                    </div>
+                    <!-- SAMSUNG GALAXY Z FLIP 3 PRICE -->
+                        <div id="price-box" class="col-lg-4 d-flex justify-content-center align-items-center">
+                            <span id="price-num"><b>9590kr</b></span></div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- PRICE CONTAINER TABLET DESKTOP -->
             <div id="price-md-lg" class="col-md-2 col-lg-2">
                 <div class="d-flex flex-column h-100">
                 <div class="d-flex justify-content-start">
@@ -152,59 +187,63 @@
                         <li>Frakt <br><strike><b>199kr</b></strike><i> gratis</i></li>
                     </ul>
                 </div>
+                <!-- TOTAL PRICE AND CONTINUE -->
                 <div class="d-flex flex-row align-items-center flex-wrap">
                     Totalt: <b>30 860kr</b>
                     <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gå vidare</button>
                 </div>
+                </div>  
             </div>
-                
+            <!-- AD RIGHT -->
+            <div id="adright" class="col-lg-2">
+                <!-- CONTENT -->
             </div>
-            <div id="adright" class="col-lg-2"></div>
-        </div>
+            </div>
         </div>
     </div>
     <!-- MODAL -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Leveransuppgifter</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Leveransuppgifter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- FORM IN MODAL -->
+                                <form action="confirmation.html">
+                                    <label for="firstname">Förnamn</label>
+                                    <input type="text" name="firstname" id="firstname" class="form-control" required>
+                                    <label for="lastname">Efternamn</label>
+                                    <input type="text" name="lastname" id="lastname" class="form-control" required>
+                                    <label for="email">E-mail</label>
+                                    <input type="email" name="email" id="email" class="form-control" required>
+                                    <label for="adress">Adress</label>
+                                    <input type="text" name="adress" id="adress" class="form-control" required>
+                                    <label for="postalcode">Postnummer</label>
+                                    <input type="text" name="postalcode" id="postalcode" class="form-control" pattern="[0-9]{5}" required>
+                                    <label for="city">Stad</label>
+                                    <input type="text" name="city" id="city" class="form-control" required>
+                                    <label for="country">Land</label>
+                                    <select class="form-select" aria-label="country" id="country">
+                                        <option selected>Sverige</option>
+                                        <option value="1">Norge</option>
+                                        <option value="2">Finland</option>
+                                        <option value="3">Danmark</option>
+                                    </select>
+                                    <button id="btn-reset" type="reset" class="btn btn-secondary w-100">Rensa</button>
+                                    <button id="btn-submit" type="submit" class="btn btn-primary w-100">Lägg Order</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
-            <div class="modal-body">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-12">
-                          <form action="confirmation.html">
-                              <label for="firstname">Förnamn</label>
-                              <input type="text" name="firstname" id="firstname" class="form-control" required>
-                              <label for="lastname">Efternamn</label>
-                              <input type="text" name="lastname" id="lastname" class="form-control" required>
-                              <label for="email">E-mail</label>
-                              <input type="email" name="email" id="email" class="form-control" required>
-                              <label for="adress">Adress</label>
-                              <input type="text" name="adress" id="adress" class="form-control" required>
-                              <label for="postalcode">Postnummer</label>
-                              <input type="text" name="postalcode" id="postalcode" class="form-control" pattern="[0-9]{5}" required>
-                              <label for="city">Stad</label>
-                              <input type="text" name="city" id="city" class="form-control" required>
-                              <label for="country">Land</label>
-                              <select class="form-select" aria-label="country" id="country">
-                                <option selected>Sverige</option>
-                                <option value="1">Norge</option>
-                                <option value="2">Finland</option>
-                                <option value="3">Danmark</option>
-                              </select>
-                                <button id="btn-reset" type="reset" class="btn btn-secondary w-100">Rensa</button>
-                                <button id="btn-submit" type="submit" class="btn btn-primary w-100">Lägg Order</button>
-                          </form>
-                      </div>
-                  </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 </body>
 </html>
