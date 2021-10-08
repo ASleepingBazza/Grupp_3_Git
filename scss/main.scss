@@ -169,7 +169,6 @@ body {
     }
   }
 }
-
 // PRODUKT MODAL //
 .modal-content {
   .modal-header {
@@ -366,78 +365,54 @@ body {
     i {
       font-size: 1.5rem;
     }
-    #checkout-main {
-      .img-wrapper {
-        padding: 30px;
-        @include mixins.desktop {
-          padding: 20px;
-        }
+    .logo-container {
+      display: none;
+      height: 40px;
+      @include mixins.tablet {
+        display: unset;
+      }
+      img {
+        height: 100%;
       }
     }
-    #adleft,
-    #adright {
-      display: none;
+    #continue {
+      background-color: variables.$primary-color;
+      &:hover {
+        background-color: variables.$primary-color-hover;
+      }
+      @include mixins.tablet {
+        display: none;
+      }
+    }
+    a:link,
+    a:visited {
+      color: black;
     }
   }
-  a:link,
-  a:visited {
-    color: black;
-  }
-}
-#checkout-main {
-  .img-wrapper {
-    padding: 30px;
-    @include mixins.desktop {
-      padding: 20px;
+  #checkout-main {
+    .img-wrapper {
+      padding: 30px;
+      @include mixins.desktop {
+        padding: 20px;
+      }
     }
   }
-}
-#adleft {
-  display: none;
-  @include mixins.desktop {
-    background-image: url("../assets/images/ad-left.jfif");
-    background-position: top;
-    display: unset;
-    height: 913px;
-  }
-}
-#adright {
-  display: none;
-  @include mixins.desktop {
-    background-image: url("../assets/images/ad-right.jfif");
-    background-position: top;
-    display: unset;
-    height: 913px;
-  }
-}
-.price-sm-container {
-  display: unset;
-  @include mixins.tablet {
+  #adleft {
     display: none;
-  }
-  #price-sm {
-    height: 40px;
-    display: unset;
-    #total {
-      float: left;
-    }
-    #amount {
-      float: right;
+    @include mixins.desktop {
+      background-image: url("../assets/images/ad-left.jfif");
+      background-position: top;
+      display: unset;
+      height: 913px;
     }
   }
-}
-#price-md-lg {
-  display: none;
-  background-color: white;
-  ul {
-    background-color: transparent;
-    width: 100%;
-    li {
-      list-style-type: none;
-      list-style-position: unset;
-    }
-    hr {
-      margin: 5px;
+  #adright {
+    display: none;
+    @include mixins.desktop {
+      background-image: url("../assets/images/ad-right.jfif");
+      background-position: top;
+      display: unset;
+      height: 913px;
     }
   }
   .price-sm-container {
@@ -456,11 +431,29 @@ body {
       }
     }
   }
-  button {
-    margin-bottom: 10px;
-    background-color: variables.$primary-color;
-    &:hover {
-      background-color: variables.$primary-color-hover;
+  #price-md-lg {
+    display: none;
+    background-color: white;
+    ul {
+      background-color: transparent;
+      width: 100%;
+      li {
+        list-style-type: none;
+        list-style-position: unset;
+      }
+      hr {
+        margin: 5px;
+      }
+    }
+    @include mixins.tablet {
+      display: unset;
+    }
+    button {
+      margin-bottom: 10px;
+      background-color: variables.$primary-color;
+      &:hover {
+        background-color: variables.$primary-color-hover;
+      }
     }
   }
   #price-box,
@@ -471,11 +464,9 @@ body {
     }
   }
 }
-
 #btn-reset {
   margin-top: 10px;
 }
-
 #btn-submit {
   margin-top: 5px;
   background-color: variables.$primary-color;
