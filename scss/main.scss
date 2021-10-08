@@ -16,6 +16,7 @@ body {
   }
 }
 
+// HOME PAGE //
 #autoscroll-btn {
   display: block;
   @include mixins.desktop {
@@ -24,6 +25,7 @@ body {
 }
 
 #mobile-tablet-menu-container {
+  z-index: 100;
   display: block;
   @include mixins.desktop {
     display: none;
@@ -39,7 +41,6 @@ body {
     .fas {
       text-align: center;
       font-size: 25pt;
-      //padding: 5pt;
     }
   }
 
@@ -53,6 +54,16 @@ body {
 }
 
 .container-fluid {
+  #left-ads {
+    background-image: url("../assets/images/ad-left.jfif");
+    background-position: top;
+  }
+
+  #right-ads {
+    background-image: url("../assets/images/ad-right.jfif");
+    background-position: top;
+  }
+
   #header {
     height: 100vh;
     background-color: variables.$third-color;
@@ -95,7 +106,7 @@ body {
     .filter {
       padding: 15pt;
       display: none;
-      font-size: 0.8rem;
+      font-size: 0.65rem;
 
       @include mixins.desktop {
         display: block;
@@ -117,7 +128,7 @@ body {
         &:hover,
         &:active {
           z-index: 1;
-          box-shadow: 0px 0px 20px 0px variables.$primary-color;
+          box-shadow: 0px 0px 20px 0px variables.$primary-color-hover;
         }
 
         .img-wrapper {
@@ -136,10 +147,28 @@ body {
   }
 
   #footer {
-    height: 150px;
     background-color: variables.$third-color;
+
+    .contact-container {
+      flex-direction: column;
+      font-size: 1rem;
+
+      @include mixins.tablet {
+        flex-direction: row;
+        font-size: 0.9em;
+      }
+
+      @include mixins.desktop {
+        font-size: 0.8em;
+      }
+
+      ul {
+        list-style: none;
+      }
+    }
   }
 }
+
 // CHECKOUT //
 .container-fluid {
   #checkout-header {
