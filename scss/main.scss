@@ -76,6 +76,10 @@ body {
       .img-wrapper {
         width: 100%;
         padding: 10pt;
+        transition: filter 0.5s ease-in;
+        &:hover {
+          filter: invert(90%);
+        }
         img {
           width: 100%;
         }
@@ -350,6 +354,7 @@ body {
 // CHECKOUT //
 #body-checkout {
   background-color: variables.$secondary-color;
+  height: 100%;
   #checkout-header {
     height: 100px;
     background-color: variables.$third-color;
@@ -368,6 +373,10 @@ body {
     .logo-container {
       display: none;
       height: 40px;
+      transition: filter 0.5s ease-in;
+      &:hover {
+        filter: invert(90%);
+      }
       @include mixins.tablet {
         display: unset;
       }
@@ -403,7 +412,7 @@ body {
       background-image: url("../assets/images/ad-left.jfif");
       background-position: top;
       display: unset;
-      height: 913px;
+      height: 965px;
     }
   }
   #adright {
@@ -412,7 +421,7 @@ body {
       background-image: url("../assets/images/ad-right.jfif");
       background-position: top;
       display: unset;
-      height: 913px;
+      height: 965px;
     }
   }
   .price-sm-container {
