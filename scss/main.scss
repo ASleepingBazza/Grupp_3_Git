@@ -173,10 +173,9 @@ body {
 // PRODUKT MODAL //
 .modal-content {
     .modal-header {
-        background-color: rgba(27, 27, 27, 0.9);
+        background-color: rgba($color: variables.$third-color, $alpha: 1);
         color: white;
         margin: 5px;
-
         .btn-close {
             display: flex;
             align-self: flex-start;
@@ -210,8 +209,11 @@ body {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                height: 60px;
-                background-color: rgba(128, 128, 128, 0.3);
+                height: 80px;
+                background-color: rgba(
+                    $color: variables.$secondary-color,
+                    $alpha: 1
+                );
                 border-radius: 10px;
 
                 input[type="radio"][id="black"] {
@@ -228,18 +230,12 @@ body {
                     border-style: solid;
                     border-width: 0.1rem;
                     border-color: rgb(0, 0, 0);
-                }
-                input[type="radio"][id="black"]:checked + *::before {
                     background: radial-gradient(
                         black 0%,
                         black 40%,
                         transparent 50%,
                         transparent
                     );
-                    border-color: black;
-                }
-                input[type="radio"][id="black"]:checked + * {
-                    color: black;
                 }
                 input[type="radio"][id="white"] {
                     display: none;
@@ -255,18 +251,12 @@ body {
                     border-style: solid;
                     border-width: 0.1rem;
                     border-color: rgb(0, 0, 0);
-                }
-                input[type="radio"][id="white"]:checked + *::before {
                     background: radial-gradient(
                         white 0%,
                         white 40%,
                         transparent 50%,
                         transparent
                     );
-                    border-color: black;
-                }
-                input[type="radio"][id="white"]:checked + * {
-                    color: white;
                 }
                 input[type="radio"][id="red"] {
                     display: none;
@@ -282,18 +272,12 @@ body {
                     border-style: solid;
                     border-width: 0.1rem;
                     border-color: rgb(0, 0, 0);
-                }
-                input[type="radio"][id="red"]:checked + *::before {
                     background: radial-gradient(
                         Red 0%,
                         Red 40%,
                         transparent 50%,
                         transparent
                     );
-                    border-color: black;
-                }
-                input[type="radio"][id="red"]:checked + * {
-                    color: red;
                 }
                 input[type="radio"][id="blue"] {
                     display: none;
@@ -309,18 +293,12 @@ body {
                     border-style: solid;
                     border-width: 0.1rem;
                     border-color: rgb(0, 0, 0);
-                }
-                input[type="radio"][id="blue"]:checked + *::before {
                     background: radial-gradient(
                         Blue 0%,
                         Blue 40%,
                         transparent 50%,
                         transparent
                     );
-                    border-color: black;
-                }
-                input[type="radio"][id="blue"]:checked + * {
-                    color: Blue;
                 }
             }
 
@@ -335,12 +313,13 @@ body {
             }
             .check {
                 p {
+                    font-size: 16px;
                 }
             }
         }
     }
     .modal-footer {
-        height: 100px;
+        height: 150px;
 
         .btn {
             margin: 30px;

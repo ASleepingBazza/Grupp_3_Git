@@ -155,7 +155,7 @@ body {
 }
 
 .modal-content .modal-header {
-  background-color: rgba(27, 27, 27, 0.9);
+  background-color: #b2c4ff;
   color: white;
   margin: 5px;
 }
@@ -189,8 +189,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 60px;
-  background-color: rgba(128, 128, 128, 0.3);
+  height: 80px;
+  background-color: #d7ebff;
   border-radius: 10px;
 }
 .modal-content .modal-body .container .color input[type=radio][id=black] {
@@ -207,13 +207,7 @@ body {
   border-style: solid;
   border-width: 0.1rem;
   border-color: black;
-}
-.modal-content .modal-body .container .color input[type=radio][id=black]:checked + *::before {
   background: radial-gradient(black 0%, black 40%, transparent 50%, transparent);
-  border-color: black;
-}
-.modal-content .modal-body .container .color input[type=radio][id=black]:checked + * {
-  color: black;
 }
 .modal-content .modal-body .container .color input[type=radio][id=white] {
   display: none;
@@ -229,13 +223,7 @@ body {
   border-style: solid;
   border-width: 0.1rem;
   border-color: black;
-}
-.modal-content .modal-body .container .color input[type=radio][id=white]:checked + *::before {
   background: radial-gradient(white 0%, white 40%, transparent 50%, transparent);
-  border-color: black;
-}
-.modal-content .modal-body .container .color input[type=radio][id=white]:checked + * {
-  color: white;
 }
 .modal-content .modal-body .container .color input[type=radio][id=red] {
   display: none;
@@ -251,13 +239,7 @@ body {
   border-style: solid;
   border-width: 0.1rem;
   border-color: black;
-}
-.modal-content .modal-body .container .color input[type=radio][id=red]:checked + *::before {
   background: radial-gradient(Red 0%, Red 40%, transparent 50%, transparent);
-  border-color: black;
-}
-.modal-content .modal-body .container .color input[type=radio][id=red]:checked + * {
-  color: red;
 }
 .modal-content .modal-body .container .color input[type=radio][id=blue] {
   display: none;
@@ -273,13 +255,7 @@ body {
   border-style: solid;
   border-width: 0.1rem;
   border-color: black;
-}
-.modal-content .modal-body .container .color input[type=radio][id=blue]:checked + *::before {
   background: radial-gradient(Blue 0%, Blue 40%, transparent 50%, transparent);
-  border-color: black;
-}
-.modal-content .modal-body .container .color input[type=radio][id=blue]:checked + * {
-  color: Blue;
 }
 .modal-content .modal-body .container .info h5 {
   font-size: 20px;
@@ -288,8 +264,11 @@ body {
 .modal-content .modal-body .container .info span {
   font-size: 20px;
 }
+.modal-content .modal-body .container .check p {
+  font-size: 16px;
+}
 .modal-content .modal-footer {
-  height: 100px;
+  height: 150px;
 }
 .modal-content .modal-footer .btn {
   margin: 30px;
