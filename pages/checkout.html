@@ -14,11 +14,15 @@
             crossorigin="anonymous"
         />
 </head>
-<body>
+<body id="body-checkout">
     <div class="container-fluid">
         <!-- HEADER -->
         <div id="checkout-header" class="row">
-            <div class="col-12 d-flex justify-content-between align-items-center">
+            <!-- AD LEFT -->
+        <div id="adleft" class="col-lg-2">
+            <!-- CONTENT -->
+        </div>
+            <div id="header-wrapper" class="col-12 col-lg-8 d-flex justify-content-between align-items-center">
                 <!-- BUTTON TO INDEX.HTML, LOGO AND CART -->
                 <a href="../index.html">
                     <button class="btn btn-light">
@@ -32,6 +36,10 @@
                 <!-- BUTTON CONTINUE -->
                 <button id="continue" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gå vidare</button>
             </div>
+            <!-- AD RIGHT -->
+            <div id="adright" class="col-lg-2">
+                <!-- CONTENT -->
+            </div>
         </div>
         <!-- PRICE CONTAINER PHONE  -->
         <div class="row">
@@ -44,11 +52,7 @@
             </div>
         </div>
         </div>
-        <div class="row h-100">
-            <!-- AD LEFT -->
-            <div id="adleft" class="col-lg-2">
-                <!-- CONTENT -->
-            </div>
+        <div class="row h-100 justify-content-center">
             <!-- CHECKOUT MAIN -->
             <div id="checkout-main" class="col-sm-12 col-md-10 col-lg-6 justify-content-center">
                 <div id="main" class="row justify-content-center">
@@ -172,8 +176,8 @@
                 </div>
             </div>
             <!-- PRICE CONTAINER TABLET DESKTOP -->
-            <div id="price-md-lg" class="col-md-2 col-lg-2">
-                <div class="d-flex flex-column h-100">
+            <div id="price-md-lg" class="col-md-2 col-lg-2 h-50 bg-light rounded">
+                <div class="d-flex flex-column">
                 <div class="d-flex justify-content-start">
                     <ul class="ps-0">
                         <li>Huawei P40 Lite <br><b>2190kr</b></li>
@@ -193,10 +197,6 @@
                     <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gå vidare</button>
                 </div>
                 </div>  
-            </div>
-            <!-- AD RIGHT -->
-            <div id="adright" class="col-lg-2">
-                <!-- CONTENT -->
             </div>
             </div>
         </div>
