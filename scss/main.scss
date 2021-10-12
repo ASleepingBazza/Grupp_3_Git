@@ -71,21 +71,22 @@ body {
         @include mixins.desktop {
             height: 150px;
         }
-
         .logo-wrapper {
             .img-wrapper {
                 width: 100%;
                 padding: 10pt;
+                transition: filter 0.5s ease-in;
+                &:hover {
+                    filter: invert(90%);
+                }
                 img {
                     width: 100%;
                 }
-
                 @include mixins.desktop {
                     width: 50%;
                 }
             }
         }
-
         #desktop-menu-container {
             position: absolute;
             right: 0;
@@ -169,6 +170,7 @@ body {
         }
     }
 }
+
 // PRODUKT MODAL //
 .modal-content {
     .modal-header {
@@ -330,6 +332,7 @@ body {
 // CHECKOUT //
 #body-checkout {
     background-color: variables.$secondary-color;
+    height: 100%;
     #checkout-header {
         height: 100px;
         background-color: variables.$third-color;
@@ -348,6 +351,10 @@ body {
         .logo-container {
             display: none;
             height: 40px;
+            transition: filter 0.5s ease-in;
+            &:hover {
+                filter: invert(90%);
+            }
             @include mixins.tablet {
                 display: unset;
             }
@@ -383,7 +390,7 @@ body {
             background-image: url("../assets/images/ad-left.jfif");
             background-position: top;
             display: unset;
-            height: 913px;
+            height: 965px;
         }
     }
     #adright {
@@ -392,7 +399,7 @@ body {
             background-image: url("../assets/images/ad-right.jfif");
             background-position: top;
             display: unset;
-            height: 913px;
+            height: 965px;
         }
     }
     .price-sm-container {
@@ -444,11 +451,7 @@ body {
         }
     }
 }
-#btn-reset {
-    margin-top: 10px;
-}
 #btn-submit {
-    margin-top: 5px;
     background-color: variables.$primary-color;
     &:hover {
         background-color: variables.$primary-color-hover;
