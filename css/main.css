@@ -338,6 +338,10 @@ body {
 #body-checkout #checkout-header .logo-container img {
   height: 100%;
 }
+#body-checkout #checkout-header .empty {
+  height: 44px;
+  width: 58px;
+}
 #body-checkout #checkout-header #continue {
   background-color: #004c8c;
 }
@@ -369,7 +373,7 @@ body {
     background-image: url("../assets/images/ad-left.jfif");
     background-position: top;
     display: unset;
-    height: 965px;
+    height: 1095px;
   }
 }
 #body-checkout #adright {
@@ -380,7 +384,7 @@ body {
     background-image: url("../assets/images/ad-right.jfif");
     background-position: top;
     display: unset;
-    height: 965px;
+    height: 1095px;
   }
 }
 #body-checkout .price-sm-container {

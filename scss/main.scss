@@ -384,6 +384,10 @@ body {
         height: 100%;
       }
     }
+    .empty {
+      height: 44px;
+      width: 58px;
+    }
     #continue {
       background-color: variables.$primary-color;
       &:hover {
@@ -412,7 +416,7 @@ body {
       background-image: url("../assets/images/ad-left.jfif");
       background-position: top;
       display: unset;
-      height: 965px;
+      height: 1095px;
     }
   }
   #adright {
@@ -421,7 +425,7 @@ body {
       background-image: url("../assets/images/ad-right.jfif");
       background-position: top;
       display: unset;
-      height: 965px;
+      height: 1095px;
     }
   }
   .price-sm-container {

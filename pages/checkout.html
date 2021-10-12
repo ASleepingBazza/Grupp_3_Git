@@ -26,13 +26,17 @@
                 <!-- BUTTON TO INDEX.HTML, LOGO AND CART -->
                 <a href="../index.html">
                     <button class="btn btn-light">
-                        <i id="arrow-back" class="fas fa-arrow-circle-left"></i>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <i id="arrow-back" class="fas fa-arrow-circle-left"></i>
+                        </div>
                     </button>
                 </a>
-                <div class="logo-container">
+                <div class="logo-container d-flex justify-content-center align-items-center">
                     <img src="../assets/logo.png" alt="Logo">
                 </div>
-                <i id="cart-logo" class="fas fa-shopping-cart"></i>
+                <div class="empty">
+
+                </div>
                 <!-- BUTTON CONTINUE -->
                 <button id="continue" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gå vidare</button>
             </div>
@@ -312,9 +316,9 @@
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
         </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
     <script src="../js/confirmation.js"></script>
 </body>
