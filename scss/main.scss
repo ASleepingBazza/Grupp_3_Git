@@ -71,6 +71,7 @@ body {
         @include mixins.desktop {
             height: 150px;
         }
+
         .logo-wrapper {
             .img-wrapper {
                 width: 100%;
@@ -82,11 +83,13 @@ body {
                 img {
                     width: 100%;
                 }
+
                 @include mixins.desktop {
                     width: 50%;
                 }
             }
         }
+
         #desktop-menu-container {
             position: absolute;
             right: 0;
@@ -154,6 +157,7 @@ body {
         .contact-container {
             flex-direction: column;
             font-size: 1rem;
+            padding-top: 35pt;
 
             @include mixins.tablet {
                 flex-direction: row;
@@ -162,6 +166,7 @@ body {
 
             @include mixins.desktop {
                 font-size: 0.8em;
+                padding-top: 0pt;
             }
 
             ul {
