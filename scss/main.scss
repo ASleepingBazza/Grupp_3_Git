@@ -391,22 +391,22 @@ body {
     height: 44px;
     width: 58px;
   }
-  #adleft {
+  .adleft {
     display: none;
     @include mixins.desktop {
       background-image: url("../assets/images/ad-left.jfif");
       background-position: top;
       display: unset;
-      height: 1095px;
+      margin-top: -100px;
     }
   }
-  #adright {
+  .adright {
     display: none;
     @include mixins.desktop {
       background-image: url("../assets/images/ad-right.jfif");
       background-position: top;
       display: unset;
-      height: 1095px;
+      margin-top: -100px;
     }
   }
   .price-sm-container {
