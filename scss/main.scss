@@ -463,84 +463,139 @@ body {
     }
 }
 // THANKYOU //
-#body-thankyou {
-    #header-thankyou {
-        .header-wrapper {
-            display: none;
+#thankyou-container {
+    #header {
+        display: none;
+        height: 100px;
+        background-color: rgba($color: variables.$third-color, $alpha: 1);
+        .logo-container {
+            height: 40px;
             .logotype {
-                display: none;
-                height: 40px;
+                height: 100%;
             }
-            @include mixins.desktop {
-                display: unset;
-                height: 100px;
+        }
+        @include mixins.desktop {
+            display: unset;
+        }
+    }
+    #main {
+        .main-container {
+            height: 100%;
+            .check-container {
+                height: 100%;
                 background-color: rgba(
-                    $color: variables.$third-color,
+                    $color: variables.$secondary-color,
                     $alpha: 1
                 );
-                .logotype {
-                    display: unset;
+                .check-box {
+                    background-color: rgba(
+                        $color: variables.$secondary-color,
+                        $alpha: 1
+                    );
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                    .check-icon {
+                        font-size: 70px;
+                        color: green;
+                    }
+                    .main-heading {
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    @include mixins.desktop {
+                        .main-heading {
+                            font-size: 24px;
+                        }
+                    }
                 }
             }
-        }
-    }
-
-    #main-thankyou {
-        padding: 10px;
-        background-color: rgba($color: variables.$third-color, $alpha: 1);
-        .check-icon {
-            font-size: 70px;
-            color: green;
-        }
-        .main-heading {
-            width: 100%;
-            font-size: 20px;
-            font-weight: bolder;
-        }
-        .main-ordernumber {
-            font-size: 16px;
-        }
-        .main-table {
-            height: 100%;
-            padding: 0px;
-            border: 2px solid black;
-            border-radius: 10px;
-            background-color: white;
-            .table {
-                tr {
-                    font-weight: bold;
-                    border: 1px solid black;
-                }
-                .lighter {
-                    font-weight: lighter;
+            @include mixins.desktop {
+                .check-container {
+                    height: 989px;
+                    .check-box {
+                        background-color: white;
+                    }
                 }
             }
-        }
-    }
-    #footer-thankyou {
-        .footer-container {
-            height: 200px;
-            button {
-                background-color: white;
+            .order-container {
+                height: 100%;
+                background-color: rgba(
+                    $color: variables.$secondary-color,
+                    $alpha: 1
+                );
+                .table-box {
+                    height: 100%;
+                    width: 100%;
+                    background-color: white;
+                    border-radius: 10px;
+                    span {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                    .table {
+                        border: 1px solid black;
+                        .first {
+                            color: rgb(118, 118, 118);
+                        }
+                        .number {
+                            color: blue;
+                        }
+                    }
+                }
+                .content-box {
+                    height: 100%;
+                    width: 100%;
+                    background-color: white;
+                    border-radius: 10px;
+                    span {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                    .table {
+                        border: 1px solid black;
+                        .first {
+                            color: rgb(118, 118, 118);
+                        }
+                    }
+                }
+                .product-cost {
+                    height: 100%;
+                    width: 100%;
+                    background-color: white;
+                    border-radius: 10px;
+                    span {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                    .table {
+                        border: 1px solid black;
+                        .first {
+                            color: rgb(118, 118, 118);
+                        }
+                        .line {
+                            text-decoration: line-through;
+                        }
+                        .bold {
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .footer-container {
+                    height: 50px;
+                    button {
+                        background-color: white;
+                    }
+                }
             }
         }
     }
     #ad-left {
-        display: none;
-        @include mixins.desktop {
-            background-image: url("../assets/images/ad-left.jfif");
-            background-position: top;
-            display: unset;
-            height: 913px;
-        }
+        background-image: url("../assets/images/ad-left.jfif");
+        background-position: top;
     }
     #ad-right {
-        display: none;
-        @include mixins.desktop {
-            background-image: url("../assets/images/ad-right.jfif");
-            background-position: top;
-            display: unset;
-            height: 913px;
-        }
+        background-image: url("../assets/images/ad-right.jfif");
+        background-position: top;
     }
 }
