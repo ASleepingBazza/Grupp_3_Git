@@ -471,17 +471,13 @@ body {
 // THANKYOU //
 #thankyou-container {
     #header {
-        display: none;
         height: 100px;
-        background-color: rgba($color: variables.$third-color, $alpha: 1);
+        background-color: variables.$third-color;
         .logo-container {
             height: 40px;
             .logotype {
                 height: 100%;
             }
-        }
-        @include mixins.desktop {
-            display: unset;
         }
     }
     #main {

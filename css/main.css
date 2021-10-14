@@ -433,7 +433,6 @@ body {
 }
 
 #thankyou-container #header {
-  display: none;
   height: 100px;
   background-color: #b2c4ff;
 }
@@ -442,11 +441,6 @@ body {
 }
 #thankyou-container #header .logo-container .logotype {
   height: 100%;
-}
-@media screen and (min-width: 992px) {
-  #thankyou-container #header {
-    display: unset;
-  }
 }
 #thankyou-container #main .main-container {
   height: 100%;
