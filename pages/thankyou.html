@@ -20,9 +20,9 @@
         <title>Thank you</title>
     </head>
     <body>
-        <div id="thankyou-container" class="container-fluid">
+        <div id="thankyou-container" class="container-fluid h-100">
             <!-- PAGE CONTAIN-->
-            <div class="row">
+            <div class="row h-100">
                 <!-- AD LEFT -->
                 <div id="ad-left" class="col-lg-2"></div>
                 <!-- MIDDLE PART -->
@@ -52,8 +52,21 @@
                     </div>
                     <!-- MAIN -->
                     <div id="main" class="row">
-                        <div class="main-container">
-                            <div class="row">
+                        <div
+                            class="
+                                main-container
+                                d-flex
+                                flex-column
+                                align-items-stretch
+                            "
+                        >
+                            <div
+                                class="
+                                    row
+                                    align-items-center
+                                    justify-content-center
+                                "
+                            >
                                 <!-- CHECK-CIRCLE-->
                                 <div
                                     class="
@@ -61,7 +74,6 @@
                                         col-12 col-lg-6
                                         d-flex
                                         justify-content-center
-                                        align-items-center
                                         p-2
                                     "
                                 >
@@ -73,20 +85,17 @@
                                             justify-content-center
                                             align-items-center
                                             p-2
+                                            col-12
                                         "
                                     >
                                         <div class="check-icon p-2">
                                             <i class="far fa-check-circle"></i>
                                         </div>
-                                        <div class="main-heading">
+                                        <div class="main-heading text-center">
                                             <span
-                                                >Thank You For Your
-                                                Purchase!</span
-                                            >
-                                        </div>
-                                        <div class="main-heading">
-                                            <span
-                                                >Your Order Was Completed
+                                                >Thank You For Your Purchase!
+                                                <br />
+                                                Your Order Was Completed
                                                 Successfully</span
                                             >
                                         </div>
@@ -98,18 +107,18 @@
                                         order-container
                                         col-12 col-lg-6
                                         d-flex
+                                        justify-content-around
                                         align-items-center
                                         flex-column
-                                        p-2
                                     "
                                 >
+                                    <!-- YOUR ORDER -->
                                     <div
                                         class="
                                             table-box
                                             d-flex
                                             align-items-center
                                             flex-column
-                                            m-3
                                             p-2
                                             gap-2
                                         "
@@ -159,7 +168,6 @@
                                             d-flex
                                             align-items-center
                                             flex-column
-                                            m-3
                                             p-2
                                             gap-2
                                         "
@@ -230,23 +238,18 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    <!-- FOOTER -->
-                                    <div
-                                        class="
-                                            footer-container
-                                            m-3
-                                            justify-content-right
-                                        "
-                                    >
-                                        <a href="../index.html">
-                                            <button
-                                                type="button"
-                                                class="btn btn-outline-dark"
-                                            >
-                                                Done
-                                            </button>
-                                        </a>
-                                    </div>
+                                    <!-- DONE BUTTON -->
+                                    <a href="../index.html">
+                                        <button
+                                            type="button"
+                                            class="
+                                                btn btn-outline-dark
+                                                bg-white
+                                            "
+                                        >
+                                            Done
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

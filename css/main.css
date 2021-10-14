@@ -1,6 +1,6 @@
 html,
 body {
-  height: 100%;
+  background-color: #d7ebff;
   font-size: 16pt;
 }
 @media screen and (min-width: 768px) {
@@ -447,18 +447,22 @@ body {
 #thankyou-container #header .logo-container .logotype {
   height: 100%;
 }
-#thankyou-container #main .main-container {
-  height: 100%;
-}
 #thankyou-container #main .main-container .check-container {
-  height: 100%;
   background-color: #d7ebff;
+}
+@media screen and (min-width: 992px) {
+  #thankyou-container #main .main-container .check-container {
+    height: 100%;
+  }
 }
 #thankyou-container #main .main-container .check-container .check-box {
   background-color: #d7ebff;
-  height: 100%;
-  width: 100%;
   border-radius: 10px;
+}
+@media screen and (min-width: 992px) {
+  #thankyou-container #main .main-container .check-container .check-box {
+    background-color: white;
+  }
 }
 #thankyou-container #main .main-container .check-container .check-box .check-icon {
   font-size: 70px;
@@ -473,80 +477,48 @@ body {
     font-size: 24px;
   }
 }
-@media screen and (min-width: 992px) {
-  #thankyou-container #main .main-container .check-container {
-    height: 989px;
-  }
-  #thankyou-container #main .main-container .check-container .check-box {
-    background-color: white;
-  }
-}
 #thankyou-container #main .main-container .order-container {
-  height: 100%;
   background-color: #d7ebff;
+  padding: 20pt;
+  gap: 20pt;
 }
-#thankyou-container #main .main-container .order-container .table-box {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-}
-#thankyou-container #main .main-container .order-container .table-box span {
-  font-size: 24px;
-  font-weight: bold;
-}
-#thankyou-container #main .main-container .order-container .table-box .table {
-  border: 1px solid black;
-}
-#thankyou-container #main .main-container .order-container .table-box .table .first {
-  color: #767676;
-}
-#thankyou-container #main .main-container .order-container .table-box .table .number {
-  color: blue;
-}
-#thankyou-container #main .main-container .order-container .content-box {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-}
-#thankyou-container #main .main-container .order-container .content-box span {
-  font-size: 24px;
-  font-weight: bold;
-}
-#thankyou-container #main .main-container .order-container .content-box .table {
-  border: 1px solid black;
-}
-#thankyou-container #main .main-container .order-container .content-box .table .first {
-  color: #767676;
-}
+#thankyou-container #main .main-container .order-container .table-box,
+#thankyou-container #main .main-container .order-container .content-box,
 #thankyou-container #main .main-container .order-container .product-cost {
-  height: 100%;
-  width: 100%;
   background-color: white;
   border-radius: 10px;
+  width: 100%;
 }
+#thankyou-container #main .main-container .order-container .table-box span,
+#thankyou-container #main .main-container .order-container .content-box span,
 #thankyou-container #main .main-container .order-container .product-cost span {
   font-size: 24px;
   font-weight: bold;
 }
+#thankyou-container #main .main-container .order-container .table-box .table,
+#thankyou-container #main .main-container .order-container .content-box .table,
 #thankyou-container #main .main-container .order-container .product-cost .table {
   border: 1px solid black;
 }
+#thankyou-container #main .main-container .order-container .table-box .table .first,
+#thankyou-container #main .main-container .order-container .content-box .table .first,
 #thankyou-container #main .main-container .order-container .product-cost .table .first {
   color: #767676;
 }
+#thankyou-container #main .main-container .order-container .table-box .table .number,
+#thankyou-container #main .main-container .order-container .content-box .table .number,
+#thankyou-container #main .main-container .order-container .product-cost .table .number {
+  color: blue;
+}
+#thankyou-container #main .main-container .order-container .table-box .table .line,
+#thankyou-container #main .main-container .order-container .content-box .table .line,
 #thankyou-container #main .main-container .order-container .product-cost .table .line {
   text-decoration: line-through;
 }
+#thankyou-container #main .main-container .order-container .table-box .table .bold,
+#thankyou-container #main .main-container .order-container .content-box .table .bold,
 #thankyou-container #main .main-container .order-container .product-cost .table .bold {
   font-weight: bold;
-}
-#thankyou-container #main .main-container .order-container .footer-container {
-  height: 50px;
-}
-#thankyou-container #main .main-container .order-container .footer-container button {
-  background-color: white;
 }
 #thankyou-container #ad-left {
   background-image: url("../assets/images/ad-left.jfif");
