@@ -51,7 +51,7 @@
                     </a>
                     <div
                         class="
-                            logo-container
+                            logo-container-co
                             d-flex
                             justify-content-center
                             align-items-center
@@ -68,7 +68,7 @@
                         data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop"
                     >
-                        Gå vidare
+                        Continue
                     </button>
                 </div>
             </div>
@@ -76,7 +76,7 @@
             <div class="row">
                 <div class="price-sm-container">
                     <div id="price-sm" class="col-12 d-flex align-items-center">
-                        <span id="total">Totalt:</span>
+                        <span id="total">Total: </span>
                         <div class="d-flex justify-content-end w-100">
                             <span id="amount"><b>30 860kr</b></span>
                         </div>
@@ -322,8 +322,8 @@
                                 </li>
                                 <hr />
                                 <li>
-                                    Frakt <br /><strike><b>199kr</b></strike
-                                    ><i> gratis</i>
+                                    Shipping <br /><strike><b>199kr</b></strike
+                                    ><i> free</i>
                                 </li>
                             </ul>
                         </div>
@@ -331,14 +331,14 @@
                         <div
                             class="d-flex flex-row align-items-center flex-wrap"
                         >
-                            Totalt: <b>30 860kr</b>
+                            Total: <b>30 860kr</b>
                             <button
                                 type="button"
                                 class="btn btn-primary w-100"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop"
                             >
-                                Gå vidare
+                                Continue
                             </button>
                         </div>
                     </div>
@@ -361,7 +361,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="staticBackdropLabel">
-                            Leveransuppgifter
+                            Shipping Details
                         </h5>
                         <button
                             type="button"
@@ -382,7 +382,7 @@
                                     >
                                         <div class="col-12 col-md-6">
                                             <label for="firstname"
-                                                >Förnamn</label
+                                                >First name</label
                                             >
                                             <input
                                                 type="text"
@@ -392,15 +392,15 @@
                                                 required
                                             />
                                             <div class="valid-feedback">
-                                                Ser bra ut!
+                                                Looks good!
                                             </div>
                                             <div class="invalid-feedback">
-                                                Fyll i ditt förnamn.
+                                                Enter your first name.
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-6">
                                             <label for="lastname"
-                                                >Efternamn</label
+                                                >Surname</label
                                             >
                                             <input
                                                 type="text"
@@ -410,10 +410,10 @@
                                                 required
                                             />
                                             <div class="valid-feedback">
-                                                Ser bra ut!
+                                                Looks good!
                                             </div>
                                             <div class="invalid-feedback">
-                                                Fyll i ditt efternamn.
+                                                Enter your surname.
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -426,14 +426,14 @@
                                                 required
                                             />
                                             <div class="valid-feedback">
-                                                Ser bra ut!
+                                                Looks good!
                                             </div>
                                             <div class="invalid-feedback">
-                                                Fyll i en giltlig e-mailadress.
+                                                Enter a valid e-mail address.
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <label for="adress">Adress</label>
+                                            <label for="adress">Address</label>
                                             <input
                                                 type="text"
                                                 name="adress"
@@ -442,15 +442,15 @@
                                                 required
                                             />
                                             <div class="valid-feedback">
-                                                Ser bra ut!
+                                                Looks good!
                                             </div>
                                             <div class="invalid-feedback">
-                                                Fyll i din adress.
+                                                Enter your address.
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-4">
                                             <label for="postalcode"
-                                                >Postnummer</label
+                                                >Postal code</label
                                             >
                                             <input
                                                 type="text"
@@ -461,14 +461,14 @@
                                                 required
                                             />
                                             <div class="valid-feedback">
-                                                Ser bra ut!
+                                                Looks good!
                                             </div>
                                             <div class="invalid-feedback">
-                                                Fyll i ditt postnummer.
+                                                Enter a valid postal code.
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-8">
-                                            <label for="city">Stad</label>
+                                            <label for="city">City</label>
                                             <input
                                                 type="text"
                                                 name="city"
@@ -477,35 +477,37 @@
                                                 required
                                             />
                                             <div class="valid-feedback">
-                                                Ser bra ut!
+                                                Looks good!
                                             </div>
                                             <div class="invalid-feedback">
-                                                Fyll i din postort.
+                                                Enter your city.
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <label for="country">Land</label>
+                                            <label for="country">Country</label>
                                             <select
                                                 class="form-select"
                                                 aria-label="country"
                                                 id="country"
                                             >
                                                 <option selected>
-                                                    Sverige
+                                                    Sweden
                                                 </option>
-                                                <option value="1">Norge</option>
+                                                <option value="1">
+                                                    Norway
+                                                </option>
                                                 <option value="2">
                                                     Finland
                                                 </option>
                                                 <option value="3">
-                                                    Danmark
+                                                    Denmark
                                                 </option>
                                             </select>
                                             <div class="valid-feedback">
-                                                Ser bra ut!
+                                                Looks good!
                                             </div>
                                             <div class="invalid-feedback">
-                                                Välj land.
+                                                Choose country.
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -521,11 +523,10 @@
                                                     class="form-check-label"
                                                     for="invalidCheck"
                                                 >
-                                                    Jag godkänner villkoren
+                                                    I accept the terms and conditions
                                                 </label>
                                                 <div class="invalid-feedback">
-                                                    Du måste godkänna våra
-                                                    villkor.
+                                                    You need to accept our terms and conditions.
                                                 </div>
                                             </div>
                                         </div>
@@ -535,7 +536,7 @@
                                                 type="reset"
                                                 class="btn btn-secondary w-100"
                                             >
-                                                Rensa
+                                                Clear
                                             </button>
                                         </div>
                                         <div class="col-12 col-md-7">
@@ -544,7 +545,7 @@
                                                 type="submit"
                                                 class="btn btn-primary w-100"
                                             >
-                                                Lägg Order
+                                                Confirm order
                                             </button>
                                         </div>
                                     </form>
